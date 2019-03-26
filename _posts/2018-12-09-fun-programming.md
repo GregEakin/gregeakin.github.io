@@ -2,7 +2,7 @@
 layout: post
 title:  "Fun Programming!"
 date:   2018-12-09 11:42:59 -0700
-categories: functional
+categories: software
 ---
 A [__C#__][csharp] version of the data structures from Chris Okasaki's book [_Purely Functional Data Structures_][cambridge], 
 coded as static functions to closely resemble the book's description.
