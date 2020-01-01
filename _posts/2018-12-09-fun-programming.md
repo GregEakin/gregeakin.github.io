@@ -12,7 +12,7 @@ Or even, check the performance with modern tools, and compare them with other de
 Head on over to [github.com FunProgramming][source-code] to download the source code.
 
 ### From the book:
-Okasaki, Chris. _Purely Functional Data Structures_.
+Okasaki, Chris. [_Purely Functional Data Structures_](https://en.wikipedia.org/wiki/Purely_functional_data_structure).
 Cambridge, U.K.: Cambridge UP, 1998. Print.
 
 ### Features:
