@@ -1,8 +1,8 @@
 ---
-layout: default
+layout: page
 title: Books
+permalink: /books/
 ---
-<h1>Books</h1>
 
 {% assign book_groups = site.data.books | group_by: 'subject' %}
 {% for group in book_groups %}
