@@ -627,3 +627,282 @@
    year: 2002
    isbn: 0387954015
    bookcase: Shelf 1B
+
+ - last: LastName
+   first: FirstName
+   title: "Taligent's guide to designing programs : well-mannered object-oriented design in C"
+   publisher: Taligent Press Addison-Wesley
+   location: Cupertino, Calif., U.S.A. Reading, Mass
+   year: 1994
+   isbn: 9780201408881
+   bookcase: Shelf 2A
+
+ - last: LastName
+   first: FirstName
+   title: "The power of frameworks : for Windows and OS/2 developers"
+   publisher: Taligent Press Addison-Wesley
+   location: Cupertino, Calif. Reading, Mass
+   year: 1995
+   isbn: 9780201483482
+   bookcase: Shelf 2A
+
+ - last: White
+   first: Iseult
+   title: "Rational rose essentials : using the Booch method"
+   publisher: Benjamin/Cummings Pub. Co
+   location: Redwood City, Calif
+   year: 1994
+   isbn: 9780805306163
+   bookcase: Shelf 2A
+
+ - last: Fowler
+   first: Martin
+   title: "UML distilled : a brief guide to the standard object modeling language"
+   publisher: Addison Wesley
+   location: Reading, Mass
+   year: 2000
+   isbn: 9780201657838
+   bookcase: Shelf 2A
+
+ - last: Quatrani
+   first: Terry
+   title: Visual modeling with Rational Rose and UML
+   publisher: Addison Wesley
+   location: Reading, Mass
+   year: 1998
+   isbn: 9780201310160
+   bookcase: Shelf 2A
+
+ - last: Levitin
+   first: Anany
+   title: Algorithmic Puzzles
+   publisher: Oxford University Press, USA
+   location: Oxford
+   year: 2011
+   isbn: 9780199740444
+   bookcase: Shelf 2A
+
+ - last: Ruckert
+   first: Martin
+   title: "The MMIX supplement : supplement to The art of computer programmming volumes 1, 2, 3 by Donald E. Knuth"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2015
+   isbn: 9780133992311
+   bookcase: Shelf 2A
+
+ - last: Knuth
+   first: Donald
+   title: The art of computer programming
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1997
+   isbn: 9780134397603
+   bookcase: Shelf 2A
+
+ - last: Erl
+   first: Thomas
+   title: SOA design patterns
+   publisher: Prentice Hall
+   location: Upper Saddle River, NJ
+   year: 2009
+   isbn: 9780136135166
+   bookcase: Shelf 2A
+
+ - last: Abadi
+   first: Marti'n
+   title: A theory of objects
+   publisher: Springer
+   location: New York
+   year: 1996
+   isbn: 9780387947754
+   bookcase: Shelf 2A
+
+ - last: Knuth
+   first: Donald
+   title: The art of computer programming
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1997
+   isbn: 9780201896831
+   bookcase: Shelf 2A
+
+ - last: Knuth
+   first: Donald
+   title: The art of computer programming
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1997
+   isbn: 9780201853926
+   bookcase: Shelf 2A
+
+ - last: Knuth
+   first: Donald
+   title: The art of computer programming
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1973
+   isbn: 9780201896848
+   bookcase: Shelf 2A
+
+ - last: Knuth
+   first: Donald
+   title: The art of computer programming
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1973
+   isbn: 9780201896855
+   bookcase: Shelf 2A
+
+ - last: Knuth
+   first: Donald
+   title: The art of computer programming
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1973
+   isbn: 9780201038040
+   bookcase: Shelf 2A
+
+ - last: Brown
+   first: William
+   title: "AntiPatterns : refactoring software, architectures, and projects in crisis"
+   publisher: Wiley
+   location: New York
+   year: 1998
+   isbn: 9780471197133
+   bookcase: Shelf 2A
+
+ - last: Buschmann
+   first: Frank
+   title: "Pattern-oriented software architecture : a system of patterns"
+   publisher: Wiley
+   location: Chichester New York
+   year: 1996
+   isbn: 9780471958697
+   bookcase: Shelf 2A
+
+ - last: Schmidt
+   first: Douglas
+   title: Pattern-oriented software architecture
+   publisher: Wiley
+   location: Chichester, West Sussex, England New York, NY
+   year: 2000
+   isbn: 9780471606956
+   bookcase: Shelf 2A
+
+ - last: Mullin
+   first: Mark
+   title: "Object oriented program design : with examples in C"
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1989
+   isbn: 9780201517224
+   bookcase: Shelf 2A
+
+ - last: Mosteller
+   first: William
+   title: Systems programmer's problem solver
+   publisher: QED Information Sciences
+   location: Wellesley, Mass
+   year: 1989
+   isbn: 0894352717
+   bookcase: Shelf 2A
+
+ - last: Martin
+   first: Robert
+   title: Designing object-oriented C++ applications using the Booch method
+   publisher: Prentice Hall
+   location: Englewood Cliffs, N.J
+   year: 1995
+   isbn: 9780132038379
+   bookcase: Shelf 2A
+
+ - last: Coad
+   first: Peter
+   title: Object-oriented design
+   publisher: Yourdon Press
+   location: Englewood Cliffs, N.J
+   year: 1991
+   isbn: 9780136300700
+   bookcase: Shelf 2A
+
+ - last: Fowler
+   first: Martin
+   title: "Analysis patterns : reusable object models"
+   publisher: Addison Wesley
+   location: Menlo Park, Calif
+   year: 1997
+   isbn: 9780201895421
+   bookcase: Shelf 2A
+
+ - last: Booch
+   first: Grady
+   title: Object oriented design with applications
+   publisher: Benjamin/Cummings Pub. Co
+   location: Redwood City, Calif
+   year: 1991
+   isbn: 9780805300918
+   bookcase: Shelf 2A
+
+ - last: Rumbaugh
+   first: James
+   title: The unified modeling language reference manual
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1999
+   isbn: 9780201309980
+   bookcase: Shelf 2A
+
+ - last: Booch
+   first: Grady
+   title: The unified modeling language user guide
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1999
+   isbn: 0201571684
+   bookcase: Shelf 2A
+
+ - last: Gamma
+   first: Erich
+   title: "Design patterns : elements of reusable object-oriented software"
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1995
+   isbn: 0201633612
+   bookcase: Shelf 2A
+
+ - last: Booch
+   first: Grady
+   title: Object-oriented analysis and design with applications
+   publisher: Benjamin/Cummings Pub. Co
+   location: Redwood City, Calif
+   year: 1994
+   isbn: 0805353402
+   bookcase: Shelf 2A
+
+ - last: Cohen
+   first: Daniel
+   title: Introduction to computer theory
+   publisher: Wiley
+   location: New York
+   year: 1991
+   isbn: 0471510106
+   bookcase: Shelf 2A
+
+ - last: Fowler
+   first: Martin
+   title: "Refactoring : improving the design of existing code"
+   publisher: Addison-Wesley
+   location: Reading, MA
+   year: 1999
+   isbn: 0201485672
+   bookcase: Shelf 2A
+
+ - last: Rabaey
+   first: Jan
+   title: "Digital integrated circuits : a design perspective"
+   publisher: Pearson Education
+   location: Upper Saddle River, N.J
+   year: 2003
+   isbn: 0135974445
+   bookcase: Shelf 2A
