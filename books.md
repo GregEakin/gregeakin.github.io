@@ -3,8 +3,9 @@ layout: page
 title: Books
 permalink: /books/
 ---
+These are a few books that I've found fun to read.
 
-{% assign book_groups = site.data.books | group_by: 'subject' %}
+{% assign book_groups = site.data.books | group_by: 'bookcase' %}
 {% for group in book_groups %}
 {{ group.name }}
 {% assign sorted-posts = group.items | sort: 'year' %}
