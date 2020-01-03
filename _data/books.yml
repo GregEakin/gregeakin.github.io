@@ -906,3 +906,237 @@
    year: 2003
    isbn: 0135974445
    bookcase: Shelf 2A
+
+ - last: Meike
+   first: G
+   title: Android concurrency
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2016
+   isbn: 9780134177434
+   bookcase: Shelf 2B
+
+ - last: Nudelman
+   first: Greg
+   title: "Android design patterns : interaction design solutions for developers"
+   publisher: John Wiley & Sons
+   location: Indianapolis, IN
+   year: 2013
+   isbn: 9781118394151
+   bookcase: Shelf 2B
+
+ - last: Sessa
+   first: Carlos
+   title: 50 Android hacks
+   publisher: Manning Publications
+   location: Shelter Island, NY
+   year: 2013
+   isbn: 9781617290565
+   bookcase: Shelf 2B
+
+ - last: Hohpe
+   first: Gregor
+   title: "Enterprise integration patterns : designing, building, and deploying messaging solutions"
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2004
+   isbn: 9780321200686
+   bookcase: Shelf 2B
+
+ - last: Meszaros
+   first: Gerard
+   title: "XUnit test patterns : refactoring test code"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2007
+   isbn: 9780131495050
+   bookcase: Shelf 2B
+
+ - last: Fowler
+   first: Martin
+   title: Patterns of enterprise application architecture
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2003
+   isbn: 9780321127426
+   bookcase: Shelf 2B
+
+ - last: Warren
+   first: Henry
+   title: Hacker's delight
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2003
+   isbn: 9780201914658
+   bookcase: Shelf 2B
+
+ - last: Daigneau
+   first: Robert
+   title: "Service design patterns : fundamental design solutions for SOAP/WSDL and restful Web services"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2012
+   isbn: 9780321544209
+   bookcase: Shelf 2B
+
+ - last: Poppendieck
+   first: Mary
+   title: "Implementing lean software development : from concept to cash"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2007
+   isbn: 9780321437389
+   bookcase: Shelf 2B
+
+ - last: Freeman
+   first: Steve
+   title: "Growing object-oriented software : guided by tests"
+   publisher: Addison-Wesley Professional
+   location: United States
+   year: 2009
+   isbn: 9780321503626
+   bookcase: Shelf 2B
+
+ - last: Beck
+   first: Kent
+   title: "Test-driven development : by example"
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2003
+   isbn: 9780321146533
+   bookcase: Shelf 2B
+
+ - last: Cohn
+   first: Mike
+   title: "Succeeding with agile : software development using Scrum"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2010
+   isbn: 9780321579362
+   bookcase: Shelf 2B
+
+ - last: Kerievsky
+   first: Joshua
+   title: Refactoring to patterns
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2005
+   isbn: 9780321213358
+   bookcase: Shelf 2B
+
+ - last: Ambler
+   first: Scott
+   title: "Refactoring databases : evolutionary database design"
+   publisher: Addison Wesley
+   location: Upper Saddle River, NJ
+   year: 2006
+   isbn: 0321293533
+   bookcase: Shelf 2B
+
+ - last: Richardson
+   first: Chris
+   title: Microservices patterns with examples in Java
+   publisher: Manning Publications
+   location: Shelter Island, New York
+   year: 2019
+   isbn: 9781617294549
+   bookcase: Shelf 2B
+
+ - last: Bejeck
+   first: William
+   title: "Kafka Streams in Action : Real-time apps and microservices with the Kafka Streams API"
+   publisher: Manning Publications
+   location: City
+   year: 2018
+   isbn: 9781617294471
+   bookcase: Shelf 2B
+
+ - last: Muschko
+   first: Benjamin
+   title: Gradle in action
+   publisher: Manning
+   location: Shelter Island, NY
+   year: 2014
+   isbn: 9781617291302
+   bookcase: Shelf 2B
+
+ - last: Ableson
+   first: W
+   title: "Unlocking Android : a developer's guide"
+   publisher: Manning
+   location: Greenwich, Conn
+   year: 2009
+   isbn: 9781933988672
+   bookcase: Shelf 2B
+
+ - last: Osherove
+   first: Roy
+   title: "The art of unit testing : with examples in .NET"
+   publisher: Manning
+   location: Greenwich, Conn
+   year: 2009
+   isbn: 9781933988276
+   bookcase: Shelf 2B
+
+ - last: Koskela
+   first: Lasse
+   title: "Test driven : practical TDD and acceptance TDD for Java developers"
+   publisher: Manning
+   location: Greenwich, Conn
+   year: 2008
+   isbn: 9781932394856
+   bookcase: Shelf 2B
+
+ - last: Rainsberger
+   first: J. B.
+   title: "JUnit recipes : practical methods for programmer testing"
+   publisher: Manning
+   location: Greenwich, CT
+   year: 2005
+   isbn: 1932394230
+   bookcase: Shelf 2B
+
+ - last: McConnell
+   first: Steve
+   title: "Code complete : a practical handbook of software construction"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 1993
+   isbn: 1556154844
+   bookcase: Shelf 2B
+
+ - last: McConnell
+   first: Steve
+   title: "Rapid development : taming wild software schedules"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 1996
+   isbn: 9781556159008
+   bookcase: Shelf 2B
+
+ - last: Christopher
+   first: Thomas
+   title: High-performance Java platform computing
+   publisher: Prentice Hall PTR
+   location: Upper Saddle River, NJ
+   year: 2000
+   isbn: 9780130161642
+   bookcase: Shelf 2B
+
+ - last: Kleinrock
+   first: Leonard
+   title: Queueing systems
+   publisher: Wiley
+   location: New York
+   year: 1975
+   isbn: 0471491101
+   bookcase: Shelf 2B
+
+ - last: Marcotty
+   first: Michael
+   title: "Programming language landscape : syntax, semantics, and implementation"
+   publisher: Macmillan
+   location: New York
+   year: 1986
+   isbn: 9780023758713
+   bookcase: Shelf 2B
