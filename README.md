@@ -1,7 +1,7 @@
-# Greg's Web Page
+# Gregory's Web Page
 
-This is Greg's home page.
+This is Gregory's home page.
 it's the backing web site for my URL: [https://eakin.dev](https://eakin.dev)
 
 ## Author
-:fire: [Greg Eakin](https://www.linkedin.com/in/gregeakin)
+:fire: [Gregory Eakin](https://www.linkedin.com/in/gregeakin)
