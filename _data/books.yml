@@ -628,6 +628,222 @@
    isbn: 0387954015
    bookcase: Shelf 1B
 
+ - last: C?ukic'
+   first: Ivan
+   title: Functional programming in C
+   publisher: Manning Publications Co
+   location: Shelter Island, NY
+   year: 2019
+   isbn: 9781617293818
+   bookcase: Shelf 1C
+
+ - last: Carroll
+   first: Martin
+   title: Designing and coding reusable C
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1995
+   isbn: 020151284X
+   bookcase: Shelf 1C
+
+ - last: Freeman
+   first: James
+   title: "Neural networks : algorithms, applications, and programming techniques"
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1991
+   isbn: 9780201548556
+   bookcase: Shelf 1C
+
+ - last: Siegel
+   first: Jon
+   title: CORBA fundamentals and programming
+   publisher: Wiley
+   location: New York
+   year: 1996
+   isbn: 9780471121480
+   bookcase: Shelf 1C
+
+ - last: Henning
+   first: Michi
+   title: Advanced CORBA programming with C
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1999
+   isbn: 9780201379273
+   bookcase: Shelf 1C
+
+ - last: Lakos
+   first: John
+   title: Large-scale C++ software design
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1996
+   isbn: 9780201633627
+   bookcase: Shelf 1C
+
+ - last: Teale
+   first: Steve
+   title: C++ IOStreams handbook
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1993
+   isbn: 9780201596410
+   bookcase: Shelf 1C
+
+ - last: Bulka
+   first: Dov
+   title: "Efficient C++ : performance programming techniques"
+   publisher: Addison Wesley
+   location: Reading, Mass
+   year: 2000
+   isbn: 9780201379501
+   bookcase: Shelf 1C
+
+ - last: Stroustrup
+   first: Bjarne
+   title: The C++ programming language
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1991
+   isbn: 9780201539929
+   bookcase: Shelf 1C
+
+ - last: Musser
+   first: David
+   title: "STL tutorial and reference guide : C++ programming with the standard template library"
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1996
+   isbn: 9780201633986
+   bookcase: Shelf 1C
+
+ - last: Meyers
+   first: Scott
+   title: "More effective C++ : 35 new ways to improve your programs and designs"
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1996
+   isbn: 9780201633719
+   bookcase: Shelf 1C
+
+ - last: Meyers
+   first: Scott
+   title: "Effective C++ : 50 specific ways to improve your programs and designs"
+   publisher: Addison-Wesley Pub. Co
+   location: Reading, Mass
+   year: 1992
+   isbn: 9780201563641
+   bookcase: Shelf 1C
+
+ - last: Kernighan
+   first: Brian
+   title: The C programming language
+   publisher: Prentice-Hall
+   location: Englewood Cliffs, N.J
+   year: 1978
+   isbn: 0131101633
+   bookcase: Shelf 1C
+
+ - last: Feuer
+   first: Alan
+   title: The C puzzle book
+   publisher: Prentice-Hall
+   location: Englewood Cliffs, N.J
+   year: 1982
+   isbn: 0131099264
+   bookcase: Shelf 1C
+
+ - last: Ellis
+   first: Margaret
+   title: The annotated C++ reference manual
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1990
+   isbn: 0201514591
+   bookcase: Shelf 1C
+
+ - last: Pennebaker
+   first: William
+   title: JPEG still image data compression standard
+   publisher: Van Nostrand Reinhold
+   location: New York
+   year: 1992
+   isbn: 9780442012724
+   bookcase: Shelf 1C
+
+ - last: Fosner
+   first: Ron
+   title: OpenGL programming for Windows 95 and Windows NT
+   publisher: Addison-Wesley Developers Press
+   location: Reading, Mass
+   year: 1997
+   isbn: 0201407094
+   bookcase: Shelf 1C
+
+ - last: Kempf
+   first: Renate
+   title: "OpenGL reference manual : the official reference document to OpenGL, version 1.1"
+   publisher: Addison-Wesley Developers Press
+   location: Reading, Mass
+   year: 1997
+   isbn: 0201461404
+   bookcase: Shelf 1C
+
+ - last: Woo
+   first: Mason
+   title: "OpenGL programming guide : the official guide to learning OpenGL, version 1.1"
+   publisher: Addison Wesley
+   location: Reading, Mass
+   year: 1997
+   isbn: 0201461382
+   bookcase: Shelf 1C
+
+ - last: Neider
+   first: Jackie
+   title: "OpenGL programming guide : the official guide to learning OpenGL, release 1"
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1993
+   isbn: 0201632748
+   bookcase: Shelf 1C
+
+ - last: Kirk
+   first: David
+   title: Graphics gems III
+   publisher: Harcourt Brace Jovanovich
+   location: Boston
+   year: 1992
+   isbn: 9780124096707
+   bookcase: Shelf 1C
+
+ - last: Arvo
+   first: James
+   title: Graphics gems II
+   publisher: Academic Press
+   location: Boston
+   year: 1991
+   isbn: 0120644800
+   bookcase: Shelf 1C
+
+ - last: Glassner
+   first: Andrew
+   title: Graphics gems
+   publisher: Academic Press
+   location: Boston
+   year: 1990
+   isbn: 0122861655
+   bookcase: Shelf 1C
+
+ - last: Glassner
+   first: Andrew
+   title: An Introduction to ray tracing
+   publisher: Academic Press
+   location: London
+   year: 1989
+   isbn: 0122861604
+   bookcase: Shelf 1C
+
  - last: LastName
    first: FirstName
    title: "Taligent's guide to designing programs : well-mannered object-oriented design in C"
@@ -1140,3 +1356,714 @@
    year: 1986
    isbn: 9780023758713
    bookcase: Shelf 2B
+
+ - last: Mahnke
+   first: Wolfgang
+   title: OPC unified architecture
+   publisher: Springer-Verlag
+   location: Berlin Heidelberg
+   year: 2009
+   isbn: 9783540688983
+   bookcase: Shelf 2C
+
+ - last: Fritzson
+   first: Peter
+   title: Introduction to modeling and simulation of technical and physical systems with Modelica
+   publisher: Wiley IEEE Press
+   location: Hoboken, N.J
+   year: 2011
+   isbn: 9781118010686
+   bookcase: Shelf 2C
+
+ - last: Michaelson
+   first: Greg
+   title: An introduction to functional programming through Lambda calculus
+   publisher: Dover Publications
+   location: Mineola, N.Y
+   year: 2011
+   isbn: 9780486478838
+   bookcase: Shelf 2C
+
+ - last: Forman
+   first: Ira
+   title: "Putting metaclasses to work : a new dimension in object-oriented programming"
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1999
+   isbn: 9780201433050
+   bookcase: Shelf 2C
+
+ - last: Sivakumar
+   first: Nishant
+   title: C++ / CLI in action
+   publisher: Manning
+   location: Greenwich, CT
+   year: 2007
+   isbn: 9781932394818
+   bookcase: Shelf 2C
+
+ - last: Saumont
+   first: Pierre
+   title: The joy of Kotlin
+   publisher: Manning Publications
+   location: Shelter Island, NY
+   year: 2018
+   isbn: 9781617295362
+   bookcase: Shelf 2C
+
+ - last: Dahle'n
+   first: Torbjo"rn
+   title: "Advanced J2EE platform development : applying integration tier patterns"
+   publisher: Prentice Hall PTR
+   location: Upper Saddle River, N.J. London
+   year: 2004
+   isbn: 9780130449122
+   bookcase: Shelf 2C
+
+ - last: Geary
+   first: David
+   title: Advanced JavaServer pages
+   publisher: Prentice Hall PTR Sun Microsystems Press
+   location: Upper Saddle River, NJ
+   year: 2001
+   isbn: 9780130307040
+   bookcase: Shelf 2C
+
+ - last: Hall
+   first: Marty
+   title: More servlets and Javaserver pages
+   publisher: Prentice Hall
+   location: Upper Saddle River, NJ
+   year: 2002
+   isbn: 9780130676146
+   bookcase: Shelf 2C
+
+ - last: Hall
+   first: Marty
+   title: Core servlets and JavaServer Pages
+   publisher: Prentice Hall PTR
+   location: Upper Saddle River, NJ
+   year: 2000
+   isbn: 9780130893406
+   bookcase: Shelf 2C
+
+ - last: Alur
+   first: Deepak
+   title: "Core J2EE patterns : best practices and design strategies"
+   publisher: Prentice Hall PTR
+   location: Upper Saddle River, NJ
+   year: 2003
+   isbn: 9780130648846
+   bookcase: Shelf 2C
+
+ - last: Winsor
+   first: Janice
+   title: More jumping JavaScript
+   publisher: Sun Microsystems Press
+   location: Palo Alto, Calif
+   year: 1999
+   isbn: 9780139228322
+   bookcase: Shelf 2C
+
+ - last: Horstmann
+   first: Cay
+   title: Core Java 1.2
+   publisher: Sun Microsystems Press
+   location: Upper Saddle River, NJ
+   year: 1999
+   isbn: 9780130819338
+   bookcase: Shelf 2C
+
+ - last: Horstmann
+   first: Cay
+   title: Core Java 1.2
+   publisher: Sun Microsystems Press
+   location: Upper Saddle River, NJ
+   year: 1999
+   isbn: 9780130819345
+   bookcase: Shelf 2C
+
+ - last: Kousen
+   first: Kenneth
+   title: Making Java Groovy
+   publisher: Manning
+   location: Shelter Island, NY
+   year: 2014
+   isbn: 9781935182948
+   bookcase: Shelf 2C
+
+ - last: Urma
+   first: FirstName
+   title: "Java 8 in action : lambdas, streams, and functional-style programming"
+   publisher: Manning
+   location: Shelter Island
+   year: 2015
+   isbn: 9781617291999
+   bookcase: Shelf 2C
+
+ - last: Subramaniam
+   first: Venkat
+   title: "Functional programming in Java : harnessing the power of Java 8 Lambda expressions"
+   publisher: The Pragmatic Programmers
+   location: Frisco, TX
+   year: 2014
+   isbn: 9781937785468
+   bookcase: Shelf 2C
+
+ - last: Jendrock
+   first: Eric
+   title: "JavaEE 5 tutorial : for Sun Java System application server platform edition 9"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, N.J
+   year: 2006
+   isbn: 9780321490292
+   bookcase: Shelf 2C
+
+ - last: Kassem
+   first: Nicholas
+   title: Designing Enterprise applications with the Java 2 Platform
+   publisher: Addison-Wesley
+   location: Boston
+   year: 2000
+   isbn: 9780201702774
+   bookcase: Shelf 2C
+
+ - last: Haefel
+   first: Richard
+   title: Enterprise JavaBeans
+   publisher: O'Reilly
+   location: Sebastopol, CA
+   year: 1999
+   isbn: 9781565926059
+   bookcase: Shelf 2C
+
+ - last: Haefel
+   first: Richard
+   title: Enterprise JavaBeans
+   publisher: O'Reilly & Associates
+   location: Cambridge, Mass
+   year: 2000
+   isbn: 9781565928695
+   bookcase: Shelf 2C
+
+ - last: Meyer
+   first: Jon
+   title: Java virtual machine
+   publisher: O'Reilly
+   location: Cambridge Mass
+   year: 1997
+   isbn: 9781565921948
+   bookcase: Shelf 2C
+
+ - last: Campione
+   first: Mary
+   title: "The Java tutorial : object-oriented programming for the Internet"
+   publisher: Addison-Wesley
+   location: Reading, Mass
+   year: 1998
+   isbn: 0201310074
+   bookcase: Shelf 2C
+
+ - last: Haefel
+   first: Richard
+   title: Java message service
+   publisher: O'Reilly
+   location: Cambridge, Mass
+   year: 2001
+   isbn: 9780596000684
+   bookcase: Shelf 2C
+
+ - last: Gosling
+   first: James
+   title: The Java language specification
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2005
+   isbn: 9780321246783
+   bookcase: Shelf 2C
+
+ - last: Lindholm
+   first: Tim
+   title: The Java virtual machine specification
+   publisher: Addison-Wesley
+   location: Reading, MA
+   year: 1999
+   isbn: 9780201432947
+   bookcase: Shelf 2C
+
+ - last: Bloch
+   first: Joshua
+   title: "Java puzzlers : traps, pitfalls, and corner cases"
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2005
+   isbn: 9780321336781
+   bookcase: Shelf 2C
+
+ - last: Goetz
+   first: Brian
+   title: Java concurrency in practice
+   publisher: Addison-Wesley
+   location: Upper Saddle River, NJ
+   year: 2006
+   isbn: 9780321349606
+   bookcase: Shelf 2C
+
+ - last: Jacky
+   first: Jonathan
+   title: Model-based software testing and analysis with C
+   publisher: Cambridge University Press
+   location: New York
+   year: 2008
+   isbn: 9780521886550
+   bookcase: Shelf 3A
+
+ - last: Petzold
+   first: Charles
+   title: "3D programming for Windows : three-dimensional graphics programming fo the Windows presentation foundation"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2007
+   isbn: 9780735623941
+   bookcase: Shelf 3A
+
+ - last: Watson
+   first: Ben
+   title: Writing high-performance .NET code
+   publisher: Ben Watson
+   location: Place of publication not identified
+   year: 2018
+   isbn: 9780990583455
+   bookcase: Shelf 3A
+
+ - last: MacDonald
+   first: Matthew
+   title: "Microsoft .NET, distributed applications : integrating XML web services and .NET remoting"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735619333
+   bookcase: Shelf 3A
+
+ - last: Jones
+   first: Allen
+   title: C? for Java developers
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735617797
+   bookcase: Shelf 3A
+
+ - last: Boar
+   first: Chris
+   title: XML Web services in the organization
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735618824
+   bookcase: Shelf 3A
+
+ - last: Grimes
+   first: Richard
+   title: Programming with managed extensions for Microsoft Visual C++ .NET
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735617247
+   bookcase: Shelf 3A
+
+ - last: Robbins
+   first: John
+   title: Debugging Microsoft .NET 2.0 applications
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2007
+   isbn: 9780735622029
+   bookcase: Shelf 3A
+
+ - last: Balena
+   first: Francesco
+   title: "Programming Microsoft Visual C? 2005 : the base class library"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2006
+   isbn: 9780735623088
+   bookcase: Shelf 3A
+
+ - last: Templeman
+   first: Julian
+   title: COM programming with Microsoft .NET
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735618756
+   bookcase: Shelf 3A
+
+ - last: Sharp
+   first: John
+   title: Microsoft Windows Communication Foundation step by step
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2007
+   isbn: 9780735623361
+   bookcase: Shelf 3A
+
+ - last: LastName
+   first: FirstName
+   title: "Microsoft visual C?.NET : language reference"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2002
+   isbn: 9780735615540
+   bookcase: Shelf 3A
+
+ - last: Shepherd
+   first: George
+   title: "Programming with Microsoft Visual C++ .NET : core reference"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735615496
+   bookcase: Shelf 3A
+
+ - last: Archer
+   first: Tom
+   title: Inside C
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2002
+   isbn: 9780735616486
+   bookcase: Shelf 3A
+
+ - last: Pratschner
+   first: Steven
+   title: Customizing the Microsoft .NET Framework common language runtime
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2005
+   isbn: 9780735619883
+   bookcase: Shelf 3A
+
+ - last: Petzold
+   first: Charles
+   title: Applications
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2006
+   isbn: 9780735619579
+   bookcase: Shelf 3A
+
+ - last: Smith
+   first: Justin
+   title: Inside Microsoft Windows Communication Foundation
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2007
+   isbn: 9780735623064
+   bookcase: Shelf 3A
+
+ - last: Gailey
+   first: Jeannine
+   title: Understanding Web services specifications and the WSE
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2004
+   isbn: 9780735619135
+   bookcase: Shelf 3A
+
+ - last: Richter
+   first: Jeffrey
+   title: Applied Microsoft.NET framework programming
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2002
+   isbn: 9780735614222
+   bookcase: Shelf 3A
+
+ - last: LastName
+   first: FirstName
+   title: "Microsoft Visual C++ .NET : language reference"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2002
+   isbn: 9780735615533
+   bookcase: Shelf 3A
+
+ - last: Richter
+   first: Jeffrey
+   title: Windows via C/C
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2008
+   isbn: 9780735624245
+   bookcase: Shelf 3A
+
+ - last: Turcan
+   first: Peter
+   title: Fundamentals of audio and video programming for games
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2004
+   isbn: 9780735619456
+   bookcase: Shelf 3A
+
+ - last: Orwick
+   first: Penny
+   title: Developing drivers with the Windows driver foundation
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2007
+   isbn: 9780735623743
+   bookcase: Shelf 3A
+
+ - last: Campbell
+   first: Sean
+   title: 101 Microsoft Visual Basic .NET applications
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2003
+   isbn: 9780735618916
+   bookcase: Shelf 3B
+
+ - last: Pallmann
+   first: David
+   title: "Programming \"Indigo\" : code name for the unified framework for building service-oriented applications on the Microsoft Windows platform"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2005
+   isbn: 9780735621510
+   bookcase: Shelf 3B
+
+ - last: Gan
+   first: Itzik
+   title: Microsoft SQL Server 2008 T-SQL fundamentals
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735626010
+   bookcase: Shelf 3B
+
+ - last: Delaney
+   first: Kalen
+   title: Microsoft SQL server 2008 internals
+   publisher: Microsoft
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735626249
+   bookcase: Shelf 3B
+
+ - last: Johnson
+   first: Glenn
+   title: "MCTS self-paced training kit : accessing data with Microsoft .NET Framework 4 (Exam 70-516"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2011
+   isbn: 9780735627390
+   bookcase: Shelf 3B
+
+ - last: Marshall
+   first: Donis
+   title: "Programming Microsoft Visual C? 2008 : the language"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2008
+   isbn: 9780735625402
+   bookcase: Shelf 3B
+
+ - last: Janes
+   first: Calvin
+   title: Developer's guide to collections in Microsoft .NET
+   publisher: O'Reilly
+   location: Sebastopol, Calif
+   year: 2011
+   isbn: 9780735659278
+   bookcase: Shelf 3B
+
+ - last: Lobel
+   first: Leonard
+   title: Programming Microsoft SQL Server 2008
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735625990
+   bookcase: Shelf 3B
+
+ - last: Hashimi
+   first: Sayed
+   title: "Inside the Microsoft Build Engine : using MSBuild and Team Foundation Build"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735626287
+   bookcase: Shelf 3B
+
+ - last: Hashimi
+   first: Sayed
+   title: "Supplement to Inside the Microsoft Build engine : using MSBuild and Team Foundation Build"
+   publisher: Microsoft
+   location: Redmond, Wash
+   year: 2013
+   isbn: 9780735678163
+   bookcase: Shelf 3B
+
+ - last: Bertocci
+   first: Vittorio
+   title: Programming Windows Identity Foundation
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2011
+   isbn: 9780735627185
+   bookcase: Shelf 3B
+
+ - last: Campbell
+   first: Colin
+   title: "Parallel programming with Microsoft.NET : design patterrns for decomposition and coordination on multicore architectures"
+   publisher: Microsoft
+   location: Place of publication not identified
+   year: 2010
+   isbn: 9780735640603
+   bookcase: Shelf 3B
+
+ - last: Garofalo
+   first: Raffaele
+   title: Building enterprise applications with Windows Presentation Foundation and the model view ViewModel Pattern
+   publisher: O'Reilly Media
+   location: Sebastopol, Calif
+   year: 2011
+   isbn: 9780735650923
+   bookcase: Shelf 3B
+
+ - last: Dalal
+   first: Mamta
+   title: XAML developer reference
+   publisher: O'Reilly Media
+   location: Sebastopol, Calif
+   year: 2011
+   isbn: 9780735658967
+   bookcase: Shelf 3B
+
+ - last: Stoecker
+   first: Matthew
+   title: "MCTS self-paced training kit (exam 70-511) : Windows applications development with Microsoft .NET Framework 4"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2011
+   isbn: 9780735627420
+   bookcase: Shelf 3B
+
+ - last: Moroney
+   first: Laurence
+   title: Introducing Microsoft Silverlight 3
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735625730
+   bookcase: Shelf 3B
+
+ - last: Ford
+   first: Sara
+   title: Microsoft Visual Studio tips
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735626409
+   bookcase: Shelf 3B
+
+ - last: Naboulsi
+   first: Zain
+   title: "Coding faster : getting more productive with Microsoft Visual Studio : covers Microsoft Visual Studio 2005, 2008, and 2010"
+   publisher: O'Reilly Media
+   location: Sebastopol, Calif
+   year: 2011
+   isbn: 9780735649927
+   bookcase: Shelf 3B
+
+ - last: Russinovich
+   first: Mark
+   title: Windows internals
+   publisher: Microsoft O'Reilly distributor
+   location: Redmond, Wash. Farnham
+   year: 2012
+   isbn: 9780735665873
+   bookcase: Shelf 3B
+
+ - last: Russinovich
+   first: Mark
+   title: Windows internals
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2012
+   isbn: 9780735648739
+   bookcase: Shelf 3B
+
+ - last: Richter
+   first: Jeffrey
+   title: CLR via C
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2010
+   isbn: 9780735627048
+   bookcase: Shelf 3B
+
+ - last: Pialorsi
+   first: Paolo
+   title: Programming Microsoft LINQ in Microsoft .NET Framework 4
+   publisher: Microsoft O'Reilly distributor
+   location: Redmond, Wash. Farnham
+   year: 2010
+   isbn: 9780735640573
+   bookcase: Shelf 3B
+
+ - last: Gan
+   first: Itzik
+   title: "Inside Microsoft SQL Server 2008 : T-SQL querying"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2009
+   isbn: 9780735626034
+   bookcase: Shelf 3B
+
+ - last: Gan
+   first: Itzik
+   title: "Inside Microsoft SQL Server 2008 : T-SQL programming"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2010
+   isbn: 9780735626027
+   bookcase: Shelf 3B
+
+ - last: Gregory
+   first: Kate
+   title: "C++ AMP : accelerated massive parallelism with Microsoft Visual C"
+   publisher: Microsoft Press
+   location: Place of publication not identified
+   year: 2012
+   isbn: 9780735664739
+   bookcase: Shelf 3B
+
+ - last: Sceppa
+   first: David
+   title: Programming Microsoft ADO.NET 2.0 core reference
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2006
+   isbn: 9780735622067
+   bookcase: Shelf 3B
+
+ - last: Johnson
+   first: Glenn
+   title: "Programming Microsoft ADO.NET 2.0 applications : advanced topics"
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2005
+   isbn: 9780735621411
+   bookcase: Shelf 3B
+
+ - last: Short
+   first: Scott
+   title: Building XML web services for the Microsoft .NET platform
+   publisher: Microsoft Press
+   location: Redmond, Wash
+   year: 2002
+   isbn: 9780735614062
+   bookcase: Shelf 3B
