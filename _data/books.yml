@@ -628,9 +628,9 @@
    isbn: 0387954015
    bookcase: Shelf 1B
 
- - last: C?ukic'
+ - last: Cukic
    first: Ivan
-   title: Functional programming in C
+   title: "Functional Programming in C++: How to Improve Your C++"
    publisher: Manning Publications Co
    location: Shelter Island, NY
    year: 2019
@@ -675,7 +675,7 @@
 
  - last: Lakos
    first: John
-   title: Large-scale C++ software design
+   title: "Large-scale C++ software design"
    publisher: Addison-Wesley Pub. Co
    location: Reading, Mass
    year: 1996
@@ -684,7 +684,7 @@
 
  - last: Teale
    first: Steve
-   title: C++ IOStreams handbook
+   title: "C++ IOStreams handbook"
    publisher: Addison-Wesley
    location: Reading, Mass
    year: 1993
@@ -702,7 +702,7 @@
 
  - last: Stroustrup
    first: Bjarne
-   title: The C++ programming language
+   title: "The C++ programming language"
    publisher: Addison-Wesley
    location: Reading, Mass
    year: 1991
@@ -756,7 +756,7 @@
 
  - last: Ellis
    first: Margaret
-   title: The annotated C++ reference manual
+   title: "The annotated C++ reference manual"
    publisher: Addison-Wesley
    location: Reading, Mass
    year: 1990
@@ -844,8 +844,8 @@
    isbn: 0122861604
    bookcase: Shelf 1C
 
- - last: LastName
-   first: FirstName
+ - last:
+   first:
    title: "Taligent's guide to designing programs : well-mannered object-oriented design in C"
    publisher: Taligent Press Addison-Wesley
    location: Cupertino, Calif., U.S.A. Reading, Mass
@@ -853,8 +853,8 @@
    isbn: 9780201408881
    bookcase: Shelf 2A
 
- - last: LastName
-   first: FirstName
+ - last:
+   first:
    title: "The power of frameworks : for Windows and OS/2 developers"
    publisher: Taligent Press Addison-Wesley
    location: Cupertino, Calif. Reading, Mass
@@ -926,7 +926,7 @@
    bookcase: Shelf 2A
 
  - last: Abadi
-   first: Marti'n
+   first: Martin
    title: A theory of objects
    publisher: Springer
    location: New York
@@ -1026,7 +1026,7 @@
 
  - last: Martin
    first: Robert
-   title: Designing object-oriented C++ applications using the Booch method
+   title: "Designing object-oriented C++ applications using the Booch method"
    publisher: Prentice Hall
    location: Englewood Cliffs, N.J
    year: 1995
@@ -1395,7 +1395,7 @@
 
  - last: Sivakumar
    first: Nishant
-   title: C++ / CLI in action
+   title: "C++ / CLI in action"
    publisher: Manning
    location: Greenwich, CT
    year: 2007
@@ -1411,8 +1411,8 @@
    isbn: 9781617295362
    bookcase: Shelf 2C
 
- - last: Dahle'n
-   first: Torbjo"rn
+ - last: Dahlen
+   first: Torbjorn
    title: "Advanced J2EE platform development : applying integration tier patterns"
    publisher: Prentice Hall PTR
    location: Upper Saddle River, N.J. London
@@ -1493,7 +1493,7 @@
    bookcase: Shelf 2C
 
  - last: Urma
-   first: FirstName
+   first:
    title: "Java 8 in action : lambdas, streams, and functional-style programming"
    publisher: Manning
    location: Shelter Island
@@ -1647,11 +1647,20 @@
 
  - last: Jones
    first: Allen
-   title: C? for Java developers
+   title: "C# for Java developers"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2003
    isbn: 9780735617797
+   bookcase: Shelf 3A
+
+ - last: Balena
+   first: Francesco
+   title: "Practical guidelines and best practices for Microsoft Visual Basic and Visual C# developers"
+   publisher: Microsoft Press
+   location: Redmond, WA
+   year: 2005
+   isbn: 9780735621725
    bookcase: Shelf 3A
 
  - last: Boar
@@ -1665,7 +1674,7 @@
 
  - last: Grimes
    first: Richard
-   title: Programming with managed extensions for Microsoft Visual C++ .NET
+   title: "Programming with managed extensions for Microsoft Visual C++ .NET"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2003
@@ -1683,7 +1692,7 @@
 
  - last: Balena
    first: Francesco
-   title: "Programming Microsoft Visual C? 2005 : the base class library"
+   title: "Programming Microsoft Visual C# 2005 : the base class library"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2006
@@ -1708,9 +1717,9 @@
    isbn: 9780735623361
    bookcase: Shelf 3A
 
- - last: LastName
-   first: FirstName
-   title: "Microsoft visual C?.NET : language reference"
+ - last:
+   first:
+   title: "Microsoft visual C#.NET : language reference"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2002
@@ -1728,7 +1737,7 @@
 
  - last: Archer
    first: Tom
-   title: Inside C
+   title: "Inside C#"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2002
@@ -1780,8 +1789,8 @@
    isbn: 9780735614222
    bookcase: Shelf 3A
 
- - last: LastName
-   first: FirstName
+ - last:
+   first:
    title: "Microsoft Visual C++ .NET : language reference"
    publisher: Microsoft Press
    location: Redmond, Wash
@@ -1791,7 +1800,7 @@
 
  - last: Richter
    first: Jeffrey
-   title: Windows via C/C
+   title: "Windows via C/C++"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2008
@@ -1863,7 +1872,7 @@
 
  - last: Marshall
    first: Donis
-   title: "Programming Microsoft Visual C? 2008 : the language"
+   title: "Programming Microsoft Visual C# 2008 : the language"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2008
@@ -1998,7 +2007,7 @@
 
  - last: Richter
    first: Jeffrey
-   title: CLR via C
+   title: "CLR via C#"
    publisher: Microsoft Press
    location: Redmond, Wash
    year: 2010
@@ -2034,7 +2043,7 @@
 
  - last: Gregory
    first: Kate
-   title: "C++ AMP : accelerated massive parallelism with Microsoft Visual C"
+   title: "C++ AMP : accelerated massive parallelism with Microsoft Visual C++"
    publisher: Microsoft Press
    location: Place of publication not identified
    year: 2012
