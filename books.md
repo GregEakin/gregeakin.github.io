@@ -10,7 +10,7 @@ These are a few books that I've found fun to read.
 {{ group.name }}
 {% assign sorted-posts = group.items | sort: 'last', 'first' %}
 <ul>{% for book in sorted-posts %}
-	<li>{{book.last}}, {{book.first}}. <i><a href="https://books.google.com/books?isbn={{book.isbn}}">{{book.title}}</a></i>. {{book.location}}: {{book.publisher}}. {{book.year}}</li> 
+	<li>{{book.last}}, {{book.first}}. <i><a href="https://www.amazon.com/s?k={{book.isbn}}">{{book.title}}</a></i>. {{book.location}}: {{book.publisher}}. {{book.year}}</li> 
 {% endfor %}</ul>
 {% endfor %}
 
