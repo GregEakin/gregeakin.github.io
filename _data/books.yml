@@ -2076,3 +2076,255 @@
    year: 2002
    isbn: 9780735614062
    bookcase: Shelf 3B
+
+ - last: Lock
+   first: Andrew
+   title: ASP.NET Core in action
+   publisher: Manning Publications
+   location: Shelter Island, NY
+   year: 2018
+   isbn: 9781617294617
+   bookcase: Floor
+
+ - last: Palermo
+   first: Jeffrey
+   title: ASP.NET MVC 4 in action
+   publisher: Manning Publications
+   location: Shelter Island, NY
+   year: 2012
+   isbn: 9781617290411
+   bookcase: Floor
+
+ - last: Bevacqua
+   first: Nicolas
+   title: "Javascript application design : a build first approach"
+   publisher: Manning Publications Company
+   location: Shelter Island, NY
+   year: 2015
+   isbn: 9781617291951
+   bookcase: Floor
+
+ - last: Jackson
+   first: Jim
+   title: HTML5 for .NET developers
+   publisher: Manning
+   location: Shelter Island, NY
+   year: 2013
+   isbn: 9781617290435
+   bookcase: Floor
+
+ - last: Resig
+   first: John
+   title: Secrets of the JavaScript ninja
+   publisher: Manning Publications
+   location: Shelter Island, NY
+   year: 2016
+   isbn: 9781617292859
+   bookcase: Floor
+
+ - last: Janert
+   first: Philipp
+   title: "Gnuplot in action : understanding data with graphs"
+   publisher: Manning Publications Co
+   location: Shelter Island, NY
+   year: 2016
+   isbn: 9781633430181
+   bookcase: Floor
+
+ - last: Gammelgaard
+   first: Christian
+   title: "Microservices in .NET Core : with examples in Nancy"
+   publisher: Manning Publications Co
+   location: Shelter Island, NY
+   year: 2017
+   isbn: 9781617293375
+   bookcase: Floor
+
+ - last: Ableson
+   first: W
+   title: Android in action
+   publisher: Manning
+   location: Shelter Island, N.Y
+   year: 2012
+   isbn: 9781617290503
+   bookcase: Floor
+
+ - last: Sayers
+   first: Aidan
+   title: Docker in Practice, Second Edition
+   publisher: Manning Publications
+   location: City
+   year: 2019
+   isbn: 9781617294808
+   bookcase: Floor
+
+ - last: LastName
+   first: FirstName
+   title: "Strengthening forensic science in the United States : a path forward : summary"
+   publisher: National Academies Press
+   location: Washington, DC
+   year: 2009
+   isbn: 9780309131353
+   bookcase: Floor
+
+ - last: Charan
+   first: Ram
+   title: "Know-how : the 8 skills that separate people who perform from those who don't"
+   publisher: Crown Business
+   location: New York
+   year: 2007
+   isbn: 9780307341518
+   bookcase: Floor
+
+ - last: Lewis
+   first: Sara
+   title: Writing skills for technical students
+   publisher: Prentice-Hall
+   location: Englewood Cliffs, N.J
+   year: 1982
+   isbn: 9780139706653
+   bookcase: Floor
+
+ - last: Newton
+   first: Lisa
+   title: Ethics in America study guide
+   publisher: Prentice Hall
+   location: Englewood Cliffs, N.J
+   year: 1989
+   isbn: 9780132902069
+   bookcase: Floor
+
+ - last: Gladwell
+   first: Malcolm
+   title: "Blink : the power of thinking without thinking"
+   publisher: Little, Brown and Co
+   location: New York
+   year: 2005
+   isbn: 9780316172325
+   bookcase: Floor
+
+ - last: Deutsch
+   first: Donny
+   title: "Often wrong, never in doubt : unleash the business rebel within"
+   publisher: Collins
+   location: New York
+   year: 2005
+   isbn: 9780060567187
+   bookcase: Floor
+
+ - last: Weeramantry
+   first: Sunil
+   title: Best lessons of a chess coach
+   publisher: David McKay
+   location: New York
+   year: 1993
+   isbn: 9780812922653
+   bookcase: Floor
+
+ - last: Wetzell
+   first: Rolf
+   title: Chess master-- at any age
+   publisher: Thinker's Press
+   location: Davenport, Iowa
+   year: 1994
+   isbn: 9780938650584
+   bookcase: Floor
+
+ - last: Winkler
+   first: Anthony
+   title: Rhetoric made plain
+   publisher: Harcourt Brace Jovanovich
+   location: San Diego
+   year: 1988
+   isbn: 9780155770812
+   bookcase: Floor
+
+ - last: VanAlstyne
+   first: Judith
+   title: Professional and technical writing strategies
+   publisher: Prentice Hall
+   location: Englewood Cliffs, N.J
+   year: 1990
+   isbn: 9780137288823
+   bookcase: Floor
+
+ - last: Wolfgang
+   first: Larry
+   title: "Now you're talking! : all you need to get your first ham radio license"
+   publisher: ARRL
+   location: Newington, CT
+   year: 2003
+   isbn: 9780872598812
+   bookcase: Floor
+
+ - last: Schiller
+   first: Eric
+   title: "Encyclopedia of chess wisdom : the gold nuggets of chess knowledge : opening, middlegame, endgame, strategies, tactics, psychology, more"
+   publisher: Cardoza
+   location: New York, NY
+   year: 1999
+   isbn: 9780940685932
+   bookcase: Floor
+
+ - last: Cusumano
+   first: Michael
+   title: "Microsoft secrets : how the world's most powerful software company creates technology, shapes markets, and manages people"
+   publisher: Simon & Schuster
+   location: New York
+   year: 1998
+   isbn: 9780684855318
+   bookcase: Floor
+
+ - last: Moore
+   first: Geoffrey
+   title: "Dealing with Darwin : how great companies innovate at every phase of their evolution"
+   publisher: Portfolio
+   location: New York
+   year: 2005
+   isbn: 9781591841074
+   bookcase: Floor
+
+ - last: Carter
+   first: Bonnie
+   title: The Rinehart handbook for writers
+   publisher: Holt, Rinehart, and Winston
+   location: New York, N.Y
+   year: 1988
+   isbn: 9780030711671
+   bookcase: Floor
+
+ - last: Young
+   first: Alex
+   title: Node.js in action
+   publisher: Manning Publications
+   location: Shelter Island, NY
+   year: 2017
+   isbn: 9781617292576
+   bookcase: Floor
+
+ - last: Slater
+   first: Robert
+   title: "Jack Welch and the GE way : management insights and leadership secrets of the legendary CEO"
+   publisher: McGraw-Hill
+   location: New York
+   year: 1999
+   isbn: 9780070581043
+   bookcase: Floor
+
+ - last: Lovell
+   first: Jim
+   title: Apollo 13
+   publisher: Houghton Mifflin
+   location: Boston
+   year: 2000
+   isbn: 9780618056651
+   bookcase: Floor
+
+ - last: Eagan
+   first: James
+   title: A speeder's guide to avoiding tickets
+   publisher: Avon Books
+   location: New York
+   year: 1999
+   isbn: 9780380807581
+   bookcase: Floor
