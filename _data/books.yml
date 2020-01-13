@@ -7,15 +7,6 @@
   year: 2008
   isbn: 9780884271956
   bookcase: Shelf 1A
-- name: Okasaki, Chris
-  first: Chris
-  last: Okasaki
-  title: Purely functional data structures
-  publisher: Cambridge University Press
-  location: Cambridge, U.K. New York
-  year: 1998
-  isbn: 9780521663502
-  bookcase: Shelf 1A
 - name: Seemann, Mark
   first: Mark
   last: Seemann
