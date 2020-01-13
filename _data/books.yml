@@ -541,7 +541,7 @@
 - name: Wlaschin, Scott
   first: Scott
   last: Wlaschin
-  title: 'Domain modeling made functional : tackle software complexity with domain-driven design and F'
+  title: 'Domain modeling made functional : tackle software complexity with domain-driven design and F#'
   publisher: Pragmatic Bookshelf
   location: Raleigh, North Carolina
   year: 2018
@@ -631,7 +631,7 @@
 - name: Cukic, Ivan
   first: Ivan
   last: Cukic
-  title: 'Functional Programming in C++: How to Improve Your C++'
+  title: 'Functional Programming in C++: How to improve your C++ programs using functional techniques'
   publisher: Manning Publications Co
   location: Shelter Island, NY
   year: 2019
@@ -640,7 +640,7 @@
 - name: Carroll, Martin
   first: Martin
   last: Carroll
-  title: Designing and coding reusable C
+  title: 'Designing and coding reusable C++'
   publisher: Addison-Wesley
   location: Reading, Mass
   year: 1995
@@ -667,7 +667,7 @@
 - name: Henning, Michi
   first: Michi
   last: Henning
-  title: Advanced CORBA programming with C
+  title: 'Advanced CORBA programming with C++'
   publisher: Addison-Wesley
   location: Reading, Mass
   year: 1999
@@ -847,7 +847,7 @@
 - name:
   first:
   last:
-  title: "Taligent's guide to designing programs : well-mannered object-oriented design in C"
+  title: "Taligent's guide to designing programs : well-mannered object-oriented design in C++"
   publisher: Taligent Press Addison-Wesley
   location: Cupertino, Calif., U.S.A. Reading, Mass
   year: 1994
@@ -1009,7 +1009,7 @@
 - name: Mullin, Mark
   first: Mark
   last: Mullin
-  title: 'Object oriented program design : with examples in C'
+  title: 'Object oriented program design : with examples in C++'
   publisher: Addison-Wesley
   location: Reading, Mass
   year: 1989
@@ -1612,7 +1612,7 @@
 - name: Jacky, Jonathan
   first: Jonathan
   last: Jacky
-  title: Model-based software testing and analysis with C
+  title: 'Model-based software testing and analysis with C#'
   publisher: Cambridge University Press
   location: New York
   year: 2008
