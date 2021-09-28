@@ -277,4 +277,4 @@ DEPENDENCIES
   nokogiri (>= 1.11.0.rc4)
 
 BUNDLED WITH
-   2.2.27
+   2.2.28
