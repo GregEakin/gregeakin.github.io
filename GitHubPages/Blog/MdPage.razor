@@ -1,0 +1,50 @@
+﻿@page "/page/{fileName}"
+@using Markdig;
+@inject HttpClient Http
+@inject IJSRuntime JS
+
+<h1>@fileName</h1>
+
+@if (string.IsNullOrWhiteSpace(_content))
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    @((MarkupString)(Body ?? string.Empty))
+}
+
+@code {
+    [Parameter] public string fileName { get; set; }
+
+    private string _content = string.Empty;
+    private readonly MarkdownPipeline _pipeline = new MarkdownPipelineBuilder()
+        .UseAdvancedExtensions()
+        .UseEmojiAndSmiley()
+        .Build();
+
+    public string? Body { get; set; }
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            _content = await Http.GetStringAsync($"_posts/{fileName}.md");
+            var document = Markdown.Parse(_content, _pipeline);
+            Body = document.ToHtml(_pipeline);
+            await InvokeAsync(StateHasChanged);
+            InitializeMermaidAndMathJax();
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+
+    private void InitializeMermaidAndMathJax()
+    {
+        JS.InvokeVoidAsync("initializeMermaidAndMathJax");
+    }
+}

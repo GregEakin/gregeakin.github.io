@@ -1,0 +1,34 @@
+﻿@page "/markdown/{fileName}"
+@inject HttpClient Http
+
+@code {
+    [Parameter]
+    public string FileName { get; set; }
+
+    private string? _content;
+
+    protected override async Task OnParametersSetAsync()
+    {
+        try
+        {
+            _content = await Http.GetStringAsync($"_posts/{FileName}");
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+}
+
+<PageTitle>@FileName</PageTitle>
+
+<h1>@FileName</h1>
+
+@if (_content == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <div>@((MarkupString)Markdig.Markdown.ToHtml(_content))</div>
+}

@@ -1,0 +1,19 @@
+{
+  "version": "1.0",
+  "defaultProvider": "cdnjs",
+  "libraries": [
+    {
+      "library": "bootstrap@5.3.3",
+      "destination": "wwwroot/lib/bootstrap/"
+    },
+    {
+      "library": "mathjax@3.2.2",
+      "destination": "wwwroot/lib/mathjax/"
+    },
+    {
+      "provider": "cdnjs",
+      "library": "mermaid@11.4.0",
+      "destination": "wwwroot/lib/mermaid/"
+    }
+  ]
+}
