@@ -1,0 +1,91 @@
+﻿@page "/library"
+@inject HttpClient Http
+
+<PageTitle>Greg's Reading Library</PageTitle>
+
+<h3>Books</h3>
+<p>These are a few books that I've found fun to read.</p>
+
+@if (_library == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    @foreach (var bookcaseGroup in _library.GroupBy(book => book.Bookcase))
+    {
+        <h4>@bookcaseGroup.Key</h4>
+        <table class="table">
+            <thead>
+            <tr>
+                <th>Author</th>
+                <th>Title</th>
+                <th>Publisher</th>
+                <th>Year</th>
+            </tr>
+            </thead>
+            <tbody>
+            @foreach (var book in bookcaseGroup)
+            {
+                <tr>
+                    <td>@book.Name</td>
+                    <td><a href="https://www.amazon.com/s?k=@book.Isbn">@book.Title</a></td>
+                    <td>@book.Publisher</td>
+                    <td>@book.Year</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+    }
+}
+
+@code {
+    private List<Book>? _library;
+
+    protected override async Task OnInitializedAsync()
+    {
+        try
+        {
+            var yaml = await Http.GetStringAsync("_data/books.yml");
+            var deserializer = new YamlDotNet.Serialization.Deserializer();
+            _library = deserializer.Deserialize<List<Book>>(yaml);
+        }
+        catch (Exception ex)
+        {
+            Console.WriteLine(ex.Message);
+        }
+    }
+
+    public class Book
+    {
+        [YamlDotNet.Serialization.YamlMember(Alias = "name")]
+        public string Name { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "first")]
+        public string First { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "last")]
+        public string Last { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "title")]
+        public string Title { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "publisher")]
+        public string Publisher { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "location")]
+        public string Location { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "year")]
+        public int Year { get; set; }
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "isbn")]
+        public string Isbn { get; set; } = string.Empty;
+
+        [YamlDotNet.Serialization.YamlMember(Alias = "bookcase")]
+        public string Bookcase { get; set; } = string.Empty;
+    }
+
+}
