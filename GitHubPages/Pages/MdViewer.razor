@@ -1,31 +1,31 @@
 ﻿@page "/page/{fileName}"
-@using Markdig;
+@using Markdig
 @inject HttpClient Http
 @inject IJSRuntime JS
+
+<PageTitle>@fileName</PageTitle>
 
 <h1>@fileName</h1>
 
 @if (string.IsNullOrWhiteSpace(_content))
 {
-    <p>
-        <em>Loading...</em>
-    </p>
+    <p><em>Loading...</em></p>
 }
 else
 {
-    @((MarkupString)(Body ?? string.Empty))
+    <div>@((MarkupString)(Body ?? string.Empty))</div>
 }
 
 @code {
-    [Parameter] public string fileName { get; set; }
+    [Parameter] public string fileName { get; set; } = string.Empty;
 
-    private string _content = string.Empty;
+    private string? Body { get; set; }
+    private string? _content;
+
     private readonly MarkdownPipeline _pipeline = new MarkdownPipelineBuilder()
         .UseAdvancedExtensions()
         .UseEmojiAndSmiley()
         .Build();
-
-    public string? Body { get; set; }
 
     protected override async Task OnParametersSetAsync()
     {

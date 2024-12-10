@@ -13,4 +13,3 @@ erDiagram
     PRODUCT-CATEGORY ||--|{ PRODUCT : contains
     PRODUCT ||--o{ ORDER-ITEM : "ordered in"
 ```
-
