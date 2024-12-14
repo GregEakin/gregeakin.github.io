@@ -11,7 +11,6 @@
       "destination": "wwwroot/lib/mathjax/"
     },
     {
-      "provider": "cdnjs",
       "library": "mermaid@11.4.0",
       "destination": "wwwroot/lib/mermaid/"
     }

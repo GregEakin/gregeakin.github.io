@@ -1,5 +1,4 @@
 ﻿@page "/"
-
 @inject NavigationManager Navigation
 
 <PageTitle>Blog</PageTitle>
@@ -15,25 +14,22 @@ Welcome to your new app.
     </tr>
     </thead>
     <tbody>
-    <tr>
-        <td>
-            <a @onclick="() => NavigateToFile(file1)">@file1</a>
-        </td>
-    </tr>
-    <tr>
-        <td>
-            <a @onclick="() => NavigateToFile(file2)">@file2</a>
-        </td>
-    </tr>
+    @foreach (var blog in _blogs)
+    {
+        <tr>
+            <td>
+                <a @onclick="() => NavigateToFile(blog)">@blog</a>
+            </td>
+        </tr>
+    }
     </tbody>
 </table>
 
 @code {
-    private string file1 = "fun-programming.md";
-    private string file2 = "genetic-ai.md";
+    private readonly string[] _blogs = ["fun-programming", "genetic-ai", "NuralNet", "test", "diag"];
 
     private void NavigateToFile(string fileName)
     {
-        Navigation.NavigateTo($"/markdown/{fileName}");
+        Navigation.NavigateTo($"/page/{fileName}");
     }
 }

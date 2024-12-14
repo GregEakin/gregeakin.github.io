@@ -23,6 +23,44 @@ Cambridge, U.K.: Cambridge UP, 1998. Print.
 * Structure dumping -> Only implemented in test code
 * Recursive structures -> Not supported (cut and paste for now)
 
+## Example -- Unbalanced Set 
+```csharp
+    public static class UnbalancedSet<T> where T : IComparable<T>
+    {
+        public sealed class Tree
+        {
+            public Tree(Tree a, T y, Tree b)
+            {
+                A = a;
+                Y = y;
+                B = b;
+            }
+
+            public Tree A { get; }
+            public T Y { get; }
+            public Tree B { get; }
+        }
+
+        public static Tree Empty => null;
+
+        public static bool Member(T x, Tree s)
+        {
+            if (s == Empty) return false;
+            if (x.CompareTo(s.Y) < 0) return Member(x, s.A);
+            if (s.Y.CompareTo(x) < 0) return Member(x, s.B);
+            return true;
+        }
+
+        public static Tree Insert(T x, Tree s)
+        {
+            if (s == Empty) return new Tree(Empty, x, Empty);
+            if (x.CompareTo(s.Y) < 0) return new Tree(Insert(x, s.A), s.Y, s.B);
+            if (s.Y.CompareTo(x) < 0) return new Tree(s.A, s.Y, Insert(x, s.B));
+            return s;
+        }
+    }
+```
+
 ### Links:
 * [Source Code][source-code]
 * [Git Extensions][git-extensions]

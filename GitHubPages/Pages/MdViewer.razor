@@ -1,29 +1,28 @@
 ﻿@page "/page/{fileName}"
-@using Markdig
 @inject HttpClient Http
 @inject IJSRuntime JS
 
-<PageTitle>@fileName</PageTitle>
-
-<h1>@fileName</h1>
-
+<PageTitle>Blog @fileName</PageTitle>
 @if (string.IsNullOrWhiteSpace(_content))
 {
     <p><em>Loading...</em></p>
 }
 else
 {
+    <h1>@PageTitle</h1>
     <div>@((MarkupString)(Body ?? string.Empty))</div>
 }
 
 @code {
     [Parameter] public string fileName { get; set; } = string.Empty;
 
-    private string? Body { get; set; }
     private string? _content;
+    private string? PageTitle { get; set; }
+    private string? Body { get; set; }
 
     private readonly MarkdownPipeline _pipeline = new MarkdownPipelineBuilder()
         .UseAdvancedExtensions()
+        .UseYamlFrontMatter()
         .UseEmojiAndSmiley()
         .Build();
 
@@ -33,6 +32,25 @@ else
         {
             _content = await Http.GetStringAsync($"_posts/{fileName}.md");
             var document = Markdown.Parse(_content, _pipeline);
+
+            var yamlBlock = document.Descendants<YamlFrontMatterBlock>().FirstOrDefault();
+            if (yamlBlock != null)
+            {
+                var yaml = _content.Substring(yamlBlock.Span.Start + 3, yamlBlock.Span.Length - 6);
+                var deserializer = new YamlDotNet.Serialization.Deserializer();
+                var frontMatter = deserializer.Deserialize<Dictionary<string, string>>(yaml);
+                foreach (var (key, value) in frontMatter)
+                {
+                    // layout
+                    // date
+                    // categories
+                    if (key.Equals("title", StringComparison.OrdinalIgnoreCase))
+                    {
+                        PageTitle = value;
+                    }
+                }
+            }
+
             Body = document.ToHtml(_pipeline);
             await InvokeAsync(StateHasChanged);
             InitializeMermaidAndMathJax();

@@ -1,5 +1,11 @@
+---
+layout: post
+title:  "Entity-Relationship Diagram"
+date:   2018-12-09 11:42:59 -0700
+categories: software
+---
 An E-R Diagram
-=======
+===
 
 
 ```mermaid
