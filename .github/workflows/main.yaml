@@ -8,7 +8,7 @@ on:
 jobs:
 
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-24.04
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -21,9 +21,23 @@ jobs:
       with:
         global-json-file: global.json
 
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Setup libman
+      run: |
+        dotnet tool install --global microsoft.web.librarymanager.cli
+        libman restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
     - name: Publish .NET Core Project
-      run: dotnet publish GitHubPages.csproj -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true
+      run: dotnet publish GitHubPages.csproj -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true --no-restore --no-build
       working-directory: GitHubPages
+
+    - name: Test
+      run: dotnet test --no-build --verbosity normal
 
 #   - name: Configure pages
 #     uses: actions/configure-pages@v5

@@ -1,0 +1,52 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [ dev ]
+
+permissions:
+  contents: read
+  pages: write
+
+jobs:
+
+  build:
+    runs-on: ubuntu-24.04
+    steps:
+    - name: Setup the job
+      uses: actions/checkout@v4
+    - name: Pull
+      run: "echo Job: ${{ github.job }}"
+    - name: Checkout
+      run: "echo Job: ${{ github.job }}"
+    - name: Build with dotnet
+      run: "echo Job: ${{ github.job }}"
+    - name: Upload artifact
+      run: "echo Job: ${{ github.job }}"
+    - name: Post checkout
+      run: "echo Job: ${{ github.job }}"
+    - name: Complete job
+      run: "echo Job: ${{ github.job }}"
+
+  report-build-status:
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
+    #- name: Setup the job
+    - name: Report build status
+      run: "echo Job: ${{ github.job }}"
+      # run gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" \
+      #       -F github_run_id="$GITHUB_RUN_ID" \
+      #       -F conclusion="$CONCLUSION
+    #- name: Complete job
+  
+  deploy:
+    runs-on: ubuntu-24.04
+    needs: build
+    steps:
+    #- name: Setup the job
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    #- name: Complete the job
