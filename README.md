@@ -11,6 +11,8 @@ dotnet new sln -o . -n gregeakin.github.io
 dotnet new globaljson --sdk-version 9.0.101 --output .
 dotnet new blazorwasm --output GitHubPages
 dotnet sln . add GitHubPages
+
+dotnet publish -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true
 .\gregeakin.github.io.sln
 ```
 
