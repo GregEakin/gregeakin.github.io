@@ -13,20 +13,51 @@ jobs:
   build:
     runs-on: ubuntu-24.04
     steps:
-    - name: Setup the job
+    #- name: Setup the job
+    #  uses: actions/checkout@v4
+    #- name: Pull
+    #  run: "echo Job: ${{ github.job }}"
+    #- name: Checkout
+    #  run: "echo Job: ${{ github.job }}"
+    #- name: Build with dotnet
+    #  run: "echo Job: ${{ github.job }}"
+    #- name: Upload artifact
+    #  run: "echo Job: ${{ github.job }}"
+    #- name: Post checkout
+    #  run: "echo Job: ${{ github.job }}"
+    #- name: Complete job
+    #  run: "echo Job: ${{ github.job }}"
+
+    - name: Checkout repository
       uses: actions/checkout@v4
-    - name: Pull
-      run: "echo Job: ${{ github.job }}"
-    - name: Checkout
-      run: "echo Job: ${{ github.job }}"
-    - name: Build with dotnet
-      run: "echo Job: ${{ github.job }}"
-    - name: Upload artifact
-      run: "echo Job: ${{ github.job }}"
-    - name: Post checkout
-      run: "echo Job: ${{ github.job }}"
-    - name: Complete job
-      run: "echo Job: ${{ github.job }}"
+  
+    - name: Setup WASM tools
+      uses: bytecodealliance/actions/wasm-tools/setup@v1
+  
+    - name: Setup .NET Core SDK
+      uses: actions/setup-dotnet@v4
+      with:
+        global-json-file: global.json
+
+    - name: Restore dependencies
+      run: dotnet restore
+
+    - name: Setup libman
+      run: |
+        dotnet tool install --global microsoft.web.librarymanager.cli
+        libman restore
+
+    - name: Build
+      run: dotnet build --no-restore
+
+    - name: Publish .NET Core Project
+      run: dotnet publish GitHubPages.csproj -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true --no-restore --no-build
+      working-directory: GitHubPages
+
+    - name: Upload artifacts
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: GitHubPages/release/
 
   report-build-status:
     runs-on: ubuntu-24.04
