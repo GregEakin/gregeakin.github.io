@@ -9,16 +9,24 @@
 }
 else
 {
-    <h1>@PageTitle</h1>
-    <div>@((MarkupString)(Body ?? string.Empty))</div>
+    <h1 class="post-title p-name" itemprop="name headline">@PageTitle</h1>
+    <p class="post-meta">
+        Originally published
+        <time class="dt-published" datetime="@Date.ToString("R")" itemprop="datePublished">@TimeAgo(Date)
+        </time>.</p>
+
+    <div class="post-content e-content" itemprop="articleBody">@((MarkupString)Body)</div>
+
+    <a class="u-url" href="/page/@fileName" hidden></a>
 }
 
 @code {
     [Parameter] public string fileName { get; set; } = string.Empty;
 
     private string? _content;
-    private string? PageTitle { get; set; }
-    private string? Body { get; set; }
+    private string PageTitle { get; set; } = string.Empty;
+    private DateTime Date { get; set; } = DateTime.Now;
+    private string Body { get; set; } = string.Empty;
 
     private readonly MarkdownPipeline _pipeline = new MarkdownPipelineBuilder()
         .UseAdvancedExtensions()
@@ -42,11 +50,14 @@ else
                 foreach (var (key, value) in frontMatter)
                 {
                     // layout
-                    // date
                     // categories
                     if (key.Equals("title", StringComparison.OrdinalIgnoreCase))
                     {
                         PageTitle = value;
+                    }
+                    else if (key.Equals("date", StringComparison.OrdinalIgnoreCase))
+                    {
+                        Date = FormatDate(value);
                     }
                 }
             }
@@ -57,6 +68,7 @@ else
         }
         catch (Exception ex)
         {
+            _content = null;
             Console.WriteLine(ex.Message);
         }
     }
@@ -64,5 +76,47 @@ else
     private void InitializeMermaidAndMathJax()
     {
         JS.InvokeVoidAsync("initializeMermaidAndMathJax");
+    }
+
+    private static string TimeAgo(DateTime dateTime)
+    {
+        var timeSpan = DateTime.Now - dateTime;
+
+        if (timeSpan.TotalDays > 365)
+        {
+            var years = (int)(timeSpan.TotalDays / 365);
+            return years == 1 ? "one year ago" : $"{years} years ago";
+        }
+        if (timeSpan.TotalDays > 30)
+        {
+            var months = (int)(timeSpan.TotalDays / 30);
+            return months == 1 ? "one month ago" : $"{months} months ago";
+        }
+        if (timeSpan.TotalDays > 1)
+        {
+            var days = (int)timeSpan.TotalDays;
+            return days == 1 ? "one day ago" : $"{days} days ago";
+        }
+        if (timeSpan.TotalHours > 1)
+        {
+            var hours = (int)timeSpan.TotalHours;
+            return hours == 1 ? "one hour ago" : $"{hours} hours ago";
+        }
+        if (timeSpan.TotalMinutes > 1)
+        {
+            var minutes = (int)timeSpan.TotalMinutes;
+            return minutes == 1 ? "one minute ago" : $"{minutes} minutes ago";
+        }
+        if (timeSpan.TotalSeconds >= 1)
+        {
+            var seconds = (int)timeSpan.TotalSeconds;
+            return seconds == 1 ? "one second ago" : $"{seconds} seconds ago";
+        }
+        return "just now";
+    }
+
+    private static DateTime FormatDate(string value)
+    {
+        return DateTime.TryParse(value, out var date) ? date : DateTime.Now;
     }
 }
