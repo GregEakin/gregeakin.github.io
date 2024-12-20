@@ -3,7 +3,7 @@
 This is Gregory's home page.
 it's the backing website for my URL: [https://www.eakin.dev](https://www.eakin.dev)
 
-## Steps
+## Project Creation
 ```shell
 mkdir gregeakin.github.io
 cd gregeakin.github.io
@@ -14,6 +14,11 @@ dotnet sln . add GitHubPages
 
 dotnet publish -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true
 .\gregeakin.github.io.sln
+```
+
+## Docker steps
+```shell
+docker build -t githubpages -f GitHubPages/Dockerfile .
 ```
 
 ## Author
