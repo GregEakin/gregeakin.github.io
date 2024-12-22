@@ -1,16 +1,16 @@
-FROM mcr.microsoft.com/dotnet/aspnet:9.0 AS base
+FROM nginx:alpine AS base
 USER $APP_UID
-WORKDIR /app
+WORKDIR /var/www/web
 EXPOSE 80
 
 FROM mcr.microsoft.com/dotnet/sdk:9.0 AS build
 ARG BUILD_CONFIGURATION=Release
 WORKDIR /src
 COPY ["GitHubPages/GitHubPages.csproj", "GitHubPages/"]
+RUN dotnet workload install wasm-tools
 RUN dotnet restore "./GitHubPages/GitHubPages.csproj"
 COPY . .
 WORKDIR "/src/GitHubPages"
-RUN dotnet workload install wasm-tools
 RUN dotnet build "./GitHubPages.csproj" -c $BUILD_CONFIGURATION --no-restore --nologo -o /app/build
 
 FROM build AS publish
@@ -20,7 +20,7 @@ RUN dotnet publish "./GitHubPages.csproj" -c $BUILD_CONFIGURATION --no-restore -
 # RUN docker build -t vim3.lab.eakin.wtf:5000/standalone:latest .
 # RUN docker run -d --rm -p 5040:80 --name standalone vim3.lab.eakin.wtf:5000/standalone:latest
 
-FROM nginx:alpine AS final
+FROM base AS final
 WORKDIR /var/www/web
 COPY --from=publish /app/publish/net9.0/publish/wwwroot .
 COPY ["GitHubPages/nginx.conf", "/etc/nginx/nginx.conf"]
