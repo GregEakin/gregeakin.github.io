@@ -19,6 +19,9 @@ dotnet publish -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=tru
 ## Docker steps
 ```shell
 docker build -t githubpages -f GitHubPages/Dockerfile .
+docker tag githubpages vim3.lab.eakin.wtf:5000/githubpages:latest
+docker push vim3.lab.eakin.wtf:5000/githubpages:latest
+docker run -d -p 5061:8081 -p 5060:8080 --name githubpages vim3.lab.eakin.wtf:5000/githubpages:latest
 ```
 
 ## Author
