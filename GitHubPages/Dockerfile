@@ -1,5 +1,5 @@
 FROM nginx:alpine AS base
-USER $APP_UID
+#USER $APP_UID
 WORKDIR /var/www/web
 EXPOSE 80
 EXPOSE 443
@@ -33,7 +33,7 @@ RUN dotnet publish "./GitHubPages.csproj" -c $BUILD_CONFIGURATION --no-restore -
 
 FROM base AS final
 WORKDIR /var/www/web
-COPY --from=publish /app/publish/net9.0/publish/wwwroot .
+COPY --from=publish /app/publish/wwwroot .
 COPY ["GitHubPages/nginx.conf", "/etc/nginx/nginx.conf"]
 EXPOSE 80
 EXPOSE 443
