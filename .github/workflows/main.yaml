@@ -6,6 +6,9 @@ on:
     branches: [ master ]
     paths-ignore:
       - "**.md"
+      - ".gitattributes" 
+      - ".gitignore"
+      - "LICENSE.txt"
 
 jobs:
   build:
@@ -17,6 +20,7 @@ jobs:
       name: github-pages
     runs-on: ubuntu-latest
     steps:
+
     - name: Checkout repository
       uses: actions/checkout@v4
   
@@ -51,42 +55,35 @@ jobs:
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
 
-#   - name: Configure pages
-#     uses: actions/configure-pages@v5
-  
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
         name: github-pages
         path: dist/Web/
  
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+ 
+    - name: Configure pages
+      uses: actions/configure-pages@v5
+  
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v4
-
-#  deploy:
-#    needs: build
-#    permissions:
-#      pages: write
-#      id-token: write
-#    environment:
-#      name: github-pages
-#      url: ${{ steps.deployment.outputs.page_url }}
-#    runs-on: ubuntu-latest
-#    steps:
-# 
-#    - name: Configure pages
-#      uses: actions/configure-pages@v5
-#  
-#    - name: Deploy to GitHub Pages
-#      id: deployment
-#      uses: actions/deploy-pages@v4
-#      with:
-#        token: ${{ secrets.GITHUB_TOKEN }}
-#        
-#    #- name: Commit wwwroot to GitHub Pages
-#    #  uses: JamesIves/github-pages-deploy-action@3.7.1
-#    #  with:
-#    #    GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-#    #    BRANCH: gh-pages
-#    #    FOLDER: release/wwwroot
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
+    - name: Commit wwwroot to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@3.7.1
+      with:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        BRANCH: gh-pages
+        FOLDER: release/wwwroot

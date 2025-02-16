@@ -12,16 +12,13 @@ dotnet new globaljson --output . --sdk-version 9.0.200 --roll-forward latestFeat
 dotnet new blazorwasm --output GitHubPages
 dotnet sln . add GitHubPages
 
-dotnet publish -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true
-.\gregeakin.github.io.sln
-```
+dotnet workload install wasm-tools
+dotnet tool install --global microsoft.web.librarymanager.cli
+dotnet restore
+dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
+dotnet publish ./GitHubPages/GitHubPages.csproj -c:Release -o dist/Web -p:GHPages=true -p:PublishTrimmed=true -p:UseAppHost=false --nologo --no-restore --no-build
 
-## Docker steps
-```shell
-docker build -t githubpages -f GitHubPages/Dockerfile .
-docker tag githubpages vim3.lab.eakin.wtf:5000/githubpages:latest
-docker push vim3.lab.eakin.wtf:5000/githubpages:latest
-docker run -d -p 5061:8081 -p 5060:8080 --name githubpages vim3.lab.eakin.wtf:5000/githubpages:latest
+.\gregeakin.github.io.sln
 ```
 
 ## Author
