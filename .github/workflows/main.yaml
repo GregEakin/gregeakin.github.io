@@ -7,14 +7,13 @@ on:
     paths-ignore:
       - "**.md"
 
-permissions:
-  contents: read
-  pages: write
-  id-token: write
-
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: read
+      pages: write
+      id-token: write
     steps:
     - name: Checkout repository
       uses: actions/checkout@v4
@@ -54,13 +53,14 @@ jobs:
 #     uses: actions/configure-pages@v5
   
     - name: Upload artifacts
-      uses: actions/upload-pages-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
-        path: dist/Web
+        name: github-pages
+        path: dist/Web/
  
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v3
+      uses: actions/deploy-pages@v4
 
   deploy:
     needs: build
@@ -78,7 +78,7 @@ jobs:
   
     - name: Deploy to GitHub Pages
       id: deployment
-      uses: actions/deploy-pages@v3
+      uses: actions/deploy-pages@v4
       with:
         token: ${{ secrets.GITHUB_TOKEN }}
         
