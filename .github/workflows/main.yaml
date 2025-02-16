@@ -63,19 +63,16 @@ jobs:
 #    - name: Add .nojekyll file
 #      run: touch dist/Web/wwwroot/.nojekyll
 
-    - name: Upload artifacts
-      uses: actions/upload-artifact@v4
+    - name: Upload static files as artifact
+      id: deployment
+      uses: actions/upload-pages-artifact@v3
       with:
-        name: github-pages
         path: dist/Web/
  
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist/Web/wwwroot
-
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
 
 
 #  retport-build-status:
@@ -84,25 +81,26 @@ jobs:
 #    steps:
 #    - name: Report Build Status
 #      run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" -F github_run_id="$GITHUB_RUN_ID" -F conclusion="$CONCLUSION"
-#
-#  deploy:
-#    needs: build
-#    permissions:
-#      contents: read
-#      pages: write
-#    environment:
-#      name: github-pages
-#    runs-on: ubuntu-latest
-#    steps:
-# 
-##    - name: Configure pages
-##      uses: actions/configure-pages@v5
-#
-##    - name: Download artifacts
-##      uses: actions/download-artifact@v4
-##      with:
-##        name: github-pages
-#  
-#    - name: Deploy to GitHub Pages
-#      uses: actions/deploy-pages@v4
-     
+
+  deploy:
+    needs: build
+    permissions:
+      contents: read
+      pages: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+ 
+#    - name: Configure pages
+#      uses: actions/configure-pages@v5
+
+#    - name: Download artifacts
+#      uses: actions/download-artifact@v4
+#      with:
+#        name: github-pages
+  
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v4
