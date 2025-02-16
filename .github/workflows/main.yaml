@@ -46,12 +46,14 @@ jobs:
         libman restore
 
     - name: Build
+      id: build
       run: dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
 
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
 
     - name: Publish .NET Core Project
+      id: publish
       run: dotnet publish ./GitHubPages/GitHubPages.csproj -c Release -o dist/Web -p:PublishTrimmed=true -p:UseAppHost=false --nologo --no-restore --no-build
 
 #    - name: Change base-tag in index.html from / to repository name
@@ -87,6 +89,7 @@ jobs:
     permissions:
       contents: read
       pages: write
+      id-token: write
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
