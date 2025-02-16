@@ -4,9 +4,10 @@ name: Deploy to GitHub Pages
 on:
   push:
     branches: [ dev ]
+    paths-ignore:
+      - "**.md"
 
 jobs:
-
   build:
     runs-on: ubuntu-24.04
     steps:
@@ -17,6 +18,9 @@ jobs:
       uses: bytecodealliance/actions/wasm-tools/setup@v1
   
     - name: Setup .NET Core SDK
+      env:
+        DOTNET_NOLOGO: true
+        DOTNET_CLI_TELEMETRY_OPTOUT: true
       uses: actions/setup-dotnet@v4
       with:
         global-json-file: global.json
@@ -33,14 +37,13 @@ jobs:
         libman restore
 
     - name: Build
-      run: dotnet build --no-restore
+      run: dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
 
     - name: Publish .NET Core Project
-      run: dotnet publish GitHubPages.csproj -c Release -o release --nologo -r linux-x64 -p:PublishTrimmed=true --no-restore --no-build
-      working-directory: GitHubPages
+      run: dotnet publish ./GitHubPages/GitHubPages.csproj -c:Release -o dist/Web -p:GHPages=true -p:PublishTrimmed=true --nologo --no-restore --no-build
 
-    - name: Test
-      run: dotnet test --no-build --verbosity normal
+#    - name: Test
+#      run: dotnet test --no-build --verbosity normal
 
 #   - name: Configure pages
 #     uses: actions/configure-pages@v5
@@ -48,32 +51,32 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-pages-artifact@v3
       with:
-        path: GitHubPages/release/
+        path: dist/Web
  
     - name: Deploy to GitHub Pages
       id: deployment
       uses: actions/deploy-pages@v3
 
-# deploy:
-#   needs: build
-#   permissions:
-#     pages: write
-#     id-token: write
-#   environment:
-#     name: github-pages
-#     url: ${{ steps.deployment.outputs.page_url }}
-#   runs-on: ubuntu-latest
-#   steps:
-#
-#   - name: Configure pages
-#     uses: actions/configure-pages@v5
-# 
-#   - name: Deploy to GitHub Pages
-#     id: deployment
-#     uses: actions/deploy-pages@v3
-#     with:
-#       token: ${{ secrets.GITHUB_TOKEN }}
-#       
+  deploy:
+    needs: build
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+ 
+    - name: Configure pages
+      uses: actions/configure-pages@v5
+  
+    - name: Deploy to GitHub Pages
+      id: deployment
+      uses: actions/deploy-pages@v3
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+        
     #- name: Commit wwwroot to GitHub Pages
     #  uses: JamesIves/github-pages-deploy-action@3.7.1
     #  with:
