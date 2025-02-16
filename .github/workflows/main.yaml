@@ -5,13 +5,9 @@ on:
   push:
     branches: [ master ]
     paths-ignore:
-      - "**.md"
       - ".gitattributes" 
       - ".gitignore"
       - "LICENSE.txt"
-      - "_data/**"
-      - "_posts/**"
-      - "assets/**"
 
 jobs:
   build:
@@ -84,4 +80,4 @@ jobs:
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
-        folder: dest/Web/
+        folder: wwwroot
