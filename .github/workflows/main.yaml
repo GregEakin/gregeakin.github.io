@@ -74,31 +74,31 @@ jobs:
       with:
         folder: dist/Web/wwwroot
 
-  retport-build-status:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - name: Report Build Status
-      run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" -F github_run_id="$GITHUB_RUN_ID" -F conclusion="$CONCLUSION"
-
-  deploy:
-    needs: build
-    permissions:
-      contents: read
-      pages: write
-    environment:
-      name: github-pages
-    runs-on: ubuntu-latest
-    steps:
- 
-#    - name: Configure pages
-#      uses: actions/configure-pages@v5
-
-#    - name: Download artifacts
-#      uses: actions/download-artifact@v4
-#      with:
-#        name: github-pages
-  
-    - name: Deploy to GitHub Pages
-      uses: actions/deploy-pages@v4
+#  retport-build-status:
+#    needs: build
+#    runs-on: ubuntu-latest
+#    steps:
+#    - name: Report Build Status
+#      run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" -F github_run_id="$GITHUB_RUN_ID" -F conclusion="$CONCLUSION"
+#
+#  deploy:
+#    needs: build
+#    permissions:
+#      contents: read
+#      pages: write
+#    environment:
+#      name: github-pages
+#    runs-on: ubuntu-latest
+#    steps:
+# 
+##    - name: Configure pages
+##      uses: actions/configure-pages@v5
+#
+##    - name: Download artifacts
+##      uses: actions/download-artifact@v4
+##      with:
+##        name: github-pages
+#  
+#    - name: Deploy to GitHub Pages
+#      uses: actions/deploy-pages@v4
      
