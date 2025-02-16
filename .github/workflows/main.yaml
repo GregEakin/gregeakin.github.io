@@ -69,24 +69,30 @@ jobs:
         name: github-pages
         path: dist/Web/
  
-  deploy:
-    needs: build
-    permissions:
-      pages: write
-      id-token: write
-    environment:
-      name: github-pages
-    runs-on: ubuntu-latest
-    steps:
- 
-#    - name: Configure pages
-#      uses: actions/configure-pages@v5
-  
-#    - name: Deploy to GitHub Pages
-#      id: deployment
-#      uses: actions/deploy-pages@v4
-        
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist/Web/wwwroot
+
+#  deploy:
+#    needs: build
+#    permissions:
+#      contents: write
+#      pages: write
+#      id-token: write
+#    environment:
+#      name: github-pages
+#    runs-on: ubuntu-latest
+#    steps:
+# 
+##    - name: Configure pages
+##      uses: actions/configure-pages@v5
+#  
+##    - name: Deploy to GitHub Pages
+##      id: deployment
+##      uses: actions/deploy-pages@v4
+#        
+#    - name: Commit wwwroot to GitHub Pages
+#      uses: JamesIves/github-pages-deploy-action@v4
+#      with:
+#        folder: dist/Web/wwwroot
