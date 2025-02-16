@@ -48,6 +48,9 @@ jobs:
     - name: Build
       run: dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
 
+    - name: Report Build Status
+      run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" -F github_run_id="$GITHUB_RUN_ID" -F conclusion="$CONCLUSION"
+
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
 
@@ -73,6 +76,10 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist/Web/wwwroot
+
+    - name: Deploy to GitHub Pages
+      uses: actions/deploy-pages@v4
+
 
 #  retport-build-status:
 #    needs: build
