@@ -48,9 +48,6 @@ jobs:
     - name: Build
       run: dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
 
-    - name: Report Build Status
-      run: gh api -X POST "repos/$GITHUB_REPOSITORY/pages/telemetry" -F github_run_id="$GITHUB_RUN_ID" -F conclusion="$CONCLUSION"
-
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
 
