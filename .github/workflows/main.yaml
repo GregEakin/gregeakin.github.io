@@ -12,7 +12,7 @@ on:
 jobs:
   build:
     permissions:
-      contents: read
+      contents: write
       pages: write
       id-token: write
     environment:
@@ -60,8 +60,8 @@ jobs:
     - name: copy index.html to 404.html
       run: cp dist/Web/wwwroot/index.html dist/Web/wwwroot/404.html
 
-    - name: Add .nojekyll file
-      run: touch dist/Web/wwwroot/.nojekyll
+#    - name: Add .nojekyll file
+#      run: touch dist/Web/wwwroot/.nojekyll
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
