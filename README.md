@@ -8,7 +8,7 @@ it's the backing website for my URL: [https://www.eakin.dev](https://www.eakin.d
 mkdir gregeakin.github.io
 cd gregeakin.github.io
 dotnet new sln -o . -n gregeakin.github.io
-dotnet new globaljson --sdk-version 9.0.101 --output .
+dotnet new globaljson --output . --sdk-version 9.0.200 --roll-forward latestFeature
 dotnet new blazorwasm --output GitHubPages
 dotnet sln . add GitHubPages
 
