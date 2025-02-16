@@ -48,11 +48,20 @@ jobs:
     - name: Build
       run: dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
 
-    - name: Publish .NET Core Project
-      run: dotnet publish ./GitHubPages/GitHubPages.csproj -c:Release -o dist/Web -p:GHPages=true -p:PublishTrimmed=true -p:UseAppHost=false --nologo --no-restore --no-build
-
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
+
+    - name: Publish .NET Core Project
+      run: dotnet publish ./GitHubPages/GitHubPages.csproj -c Release -o dist/Web -p:GHPages=true -p:PublishTrimmed=true -p:UseAppHost=false --nologo --no-restore --no-build
+
+#    - name: Change base-tag in index.html from / to repository name
+#      run: sed -i 's/<base href="\/" \/>/<base href="\/gregeakin.github.io\/" \/>/g' dist/Web/wwwroot/index.html
+
+    - name: copy index.html to 404.html
+      run: cp dist/Web/wwwroot/index.html dist/Web/wwwroot/404.html
+
+    - name: Add .nojekyll file
+      run: touch dist/Web/wwwroot/.nojekyll
 
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
@@ -70,12 +79,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
  
-    - name: Configure pages
-      uses: actions/configure-pages@v5
+#    - name: Configure pages
+#      uses: actions/configure-pages@v5
   
-    - name: Deploy to GitHub Pages
-      id: deployment
-      uses: actions/deploy-pages@v4
+#    - name: Deploy to GitHub Pages
+#      id: deployment
+#      uses: actions/deploy-pages@v4
         
     - name: Commit wwwroot to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
