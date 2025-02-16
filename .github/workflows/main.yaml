@@ -46,7 +46,7 @@ jobs:
       run: dotnet build ./GitHubPages/GitHubPages.csproj --configuration Release --no-restore
 
     - name: Publish .NET Core Project
-      run: dotnet publish ./GitHubPages/GitHubPages.csproj -c:Release -o dist/Web -p:GHPages=true -p:PublishTrimmed=true --nologo --no-restore --no-build
+      run: dotnet publish ./GitHubPages/GitHubPages.csproj -c:Release -o dist/Web -p:GHPages=true -p:PublishTrimmed=true -p:UseAppHost=false --nologo --no-restore --no-build
 
 #    - name: Test
 #      run: dotnet test --no-build --verbosity normal
@@ -57,7 +57,7 @@ jobs:
     - name: Upload artifacts
       uses: actions/upload-artifact@v4
       with:
-        name: blazor-build-artifacts
+        name: github-pages
         path: dist/Web/
  
     - name: Deploy to GitHub Pages
