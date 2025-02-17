@@ -42,8 +42,9 @@ jobs:
 
     - name: Setup libman
       run: |
-        dotnet tool install --global microsoft.web.librarymanager.cli
+        dotnet tool install --global Microsoft.Web.LibraryManager.Cli
         libman restore
+      working-directory: GitHubPages/
 
     - name: Build
       id: build
