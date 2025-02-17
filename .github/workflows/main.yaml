@@ -57,15 +57,6 @@ jobs:
       id: publish
       run: dotnet publish ./GitHubPages/GitHubPages.csproj -c Release -o dist/Web -p:PublishTrimmed=true -p:UseAppHost=false --nologo --no-restore --no-build
 
-#    - name: Change base-tag in index.html from / to repository name
-#      run: sed -i 's/<base href="\/" \/>/<base href="\/gregeakin.github.io\/" \/>/g' dist/Web/wwwroot/index.html
-
-    - name: copy index.html to 404.html
-      run: cp dist/Web/wwwroot/index.html dist/Web/wwwroot/404.html
-
-#    - name: Add .nojekyll file
-#      run: touch dist/Web/wwwroot/.nojekyll
-
     - name: Upload static files as artifact
       id: deployment
       uses: actions/upload-pages-artifact@v3
@@ -76,7 +67,6 @@ jobs:
       uses: JamesIves/github-pages-deploy-action@v4
       with:
         folder: dist/Web/wwwroot
-
 
 #  retport-build-status:
 #    needs: build
