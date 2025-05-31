@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Single Page Apps for GitHub Pages</title>
+    <script type="text/javascript">
+        // SPA redirect for GitHub Pages (Blazor WebAssembly compatible)
+        // See: https://github.com/rafgraph/spa-github-pages
+
+        // Number of path segments to keep (usually 1 for user.github.io/repo)
+        const pathSegmentsToKeep = 1;
+
+        const { protocol, hostname, port, pathname, search, hash } = window.location;
+
+        // Build the base URL (e.g., https://username.github.io/repo-name)
+        const baseUrl = protocol + '//' + hostname + (port ? ':' + port : '') + pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/');
+
+        // Extract the SPA route (the part after the repo name)
+        const spaRoute = pathname.split('/').slice(1 + pathSegmentsToKeep).join('/');
+
+        // Replace & with ~and~ to avoid conflicts in query string
+        const safeSpaRoute = spaRoute.replace(/&/g, '~and~');
+        const safeSearch = search ? '&' + search.slice(1).replace(/&/g, '~and~') : '';
+
+        // Construct the redirect URL
+        const redirectUrl = `${baseUrl}/?/${safeSpaRoute}${safeSearch}${hash}`;
+
+        // Redirect without adding a new history entry
+        window.location.replace(redirectUrl);
+    </script>
+</head>
+<body>
+</body>
+</html>
