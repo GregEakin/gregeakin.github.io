@@ -15,7 +15,7 @@
 
         (function (location) {
             // If the query string starts with a slash, it's a redirect from 404.html
-            if (location.search.startsWith('/')) {
+            if (location.search[1] === '/') {
                 // Remove trailing slash from pathname if present
                 const basePath = location.pathname.endsWith('/')
                     ? location.pathname.slice(0, -1)
