@@ -9,6 +9,26 @@
     <link rel="stylesheet" href="css/app.css" />
     <link rel="icon" type="image/png" href="favicon.png" />
     <link href="GitHubPages.styles.css" rel="stylesheet" />
+    <script type="text/javascript">
+        // SPA route restoration for GitHub Pages (Blazor WebAssembly compatible)
+        // See: https://github.com/rafgraph/spa-github-pages
+
+        (function (location) {
+            // If the query string starts with a slash, it's a redirect from 404.html
+            if (location.search.startsWith('/')) {
+                // Remove trailing slash from pathname if present
+                const basePath = location.pathname.endsWith('/')
+                    ? location.pathname.slice(0, -1)
+                    : location.pathname;
+
+                // Split on '&', replace ~and~ with &, and join with '?'
+                const restoredPath = location.search.slice(1).split('&').map(s => s.replace(/~and~/g, '&')).join('?');
+
+                // Replace the current history entry with the restored URL
+                window.history.replaceState(null, '', basePath + restoredPath + location.hash);
+            }
+        })(window.location);
+    </script>
 </head>
 <body>
     <div id="app">
