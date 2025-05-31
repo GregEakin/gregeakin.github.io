@@ -1,9 +1,9 @@
 {
   "mainAssemblyName": "GitHubPages",
   "resources": {
-    "hash": "sha256-Ap9OphZtNAxgYc+ZHcO/ahozuIwvyZ8Mv9ETBpsLayU=",
+    "hash": "sha256-smKYW3wpd/g8j9y070/rXu+CzzyQ1HXNU0NtjJyD3Sk=",
     "fingerprinting": {
-      "GitHubPages.qeicaujocx.wasm": "GitHubPages.wasm",
+      "GitHubPages.ns44i0tyso.wasm": "GitHubPages.wasm",
       "Humanizer.99gzq3p7w0.wasm": "Humanizer.wasm",
       "Markdig.Signed.mp6w6m8pug.wasm": "Markdig.Signed.wasm",
       "Microsoft.AspNetCore.Components.waquwkys99.wasm": "Microsoft.AspNetCore.Components.wasm",
@@ -51,7 +51,7 @@
       "System.ezrw3d5kw2.wasm": "System.wasm",
       "YamlDotNet.3j21ruhhkz.wasm": "YamlDotNet.wasm",
       "dotnet.native.bo3ky93wof.js": "dotnet.native.js",
-      "dotnet.native.354jeeyfjb.wasm": "dotnet.native.wasm",
+      "dotnet.native.zh7bzhl7au.wasm": "dotnet.native.wasm",
       "dotnet.js": "dotnet.js",
       "dotnet.runtime.5nhp1wfg9b.js": "dotnet.runtime.js",
       "icudt_CJK.tjcz0u77k5.dat": "icudt_CJK.dat",
@@ -65,7 +65,7 @@
       "dotnet.runtime.5nhp1wfg9b.js": "sha256-kTZbe5ESp04VMT22TnjRmFj88VbtEcohZfCm4og/IDw="
     },
     "wasmNative": {
-      "dotnet.native.354jeeyfjb.wasm": "sha256-t0EuZbARNH5xQ3rHvZulcoYidiLLTL14YfrMVN6Rulk="
+      "dotnet.native.zh7bzhl7au.wasm": "sha256-SQ5g8sC0rLOc6R0IDs57A2TRFBL96fFO1BzV0SwR5kM="
     },
     "icu": {
       "icudt_CJK.tjcz0u77k5.dat": "sha256-SZLtQnRc0JkwqHab0VUVP7T3uBPSeYzxzDnpxPpUnHk=",
@@ -73,7 +73,7 @@
       "icudt_no_CJK.lfu7j35m59.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "coreAssembly": {
-      "GitHubPages.qeicaujocx.wasm": "sha256-MppsnjX5I0k38X3FaaPtCI35yEDIkAHvCNOL+fO4ILw=",
+      "GitHubPages.ns44i0tyso.wasm": "sha256-uWxq6HQyT5LwQTVciTw8iDR2s893z8pkxdD+vyA1Pak=",
       "Humanizer.99gzq3p7w0.wasm": "sha256-8ywQ6TpvymPVJ4qbZLbt+aLMylldEhxBJgrVFmi1rEw=",
       "Markdig.Signed.mp6w6m8pug.wasm": "sha256-+oflkBwI+GNLDaF9vMj9dM9S3yOMdFkpW4+v8mPcqZg=",
       "Microsoft.AspNetCore.Components.waquwkys99.wasm": "sha256-qPD64atChdRPJUlaWmcwmSD7jtrj9AYQOl77+N0i8tA=",
