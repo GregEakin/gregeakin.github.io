@@ -1,3 +1,8 @@
+---
+Title: "Testing Mark Down Stuff"
+date: 2024-12-08 09:19:45 -0700
+---
+
 Building Your First .NET Core Applications
 =======
 
@@ -6,7 +11,7 @@ create an application, and
 
 When $ a \ne 0 $, there are **two solutions** to $ ax^2 + bx + c = 0 $ and they are $ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $.
 
-### Equation of Pi
+### Equation of Pi (one of many)
 
 $$
 \begin{equation}
@@ -27,7 +32,7 @@ $$
 \begin{aligned} 2x - 4 &= 6 \\ 2x &= 10 \\ x &= 5 \end{aligned} 
 $$
 
-### Anoucement
+### Announcement
 
 ```text
  ____              _               _   
@@ -188,7 +193,7 @@ flowchart LR
 
 ### Image
 
-![Tux, the Linux mascot](assets/Blob.PNG "Tux, the Linux mascot")
+![Blob, happy to be here.](assets/Blob.PNG "Blob, happy to be here.")
 
 ### Links
 

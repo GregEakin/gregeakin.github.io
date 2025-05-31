@@ -1,6 +1,6 @@
 ---
-Title: "Markdig Cheat Sheet"
-Published: 01/08/2017 17:17:42
+title: "Markdig Cheat Sheet"
+date: 2017-01-08 17:17:42
 ---
 
     Tags: ["Wyam", "Markdig"]

@@ -1,3 +1,8 @@
+---
+Title: "Graph of a Nural Net Robot"
+date: 2024-12-08 09:36:00 -0700
+---
+
 ### Graphs
 ```mermaid
 graph LR 

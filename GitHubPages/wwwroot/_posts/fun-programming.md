@@ -159,7 +159,7 @@ Searching for elements in the tree, works as expected.
 [csharp]: https://en.wikipedia.org/wiki/C_Sharp_(programming_language)
 [standard-ml]: https://en.wikipedia.org/wiki/Standard_ML
 [haskell]: https://en.wikipedia.org/wiki/Haskell_(programming_language)
-[cambridge]: https://www.cambridge.org/catalogue/catalogue.asp?isbn=0521663504
+[cambridge]: https://www.cambridge.org/core/books/purely-functional-data-structures/0409255DA1B48FA731859AC72E34D494
 [source-code]: https://github.com/GregEakin/FunProgramming
 [git-extensions]: https://gitextensions.github.io
 [visual-studio]: https://visualstudio.microsoft.com/vs/community/

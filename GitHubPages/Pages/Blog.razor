@@ -16,7 +16,7 @@
     {
         <tr>
             <td>
-                <a @onclick="() => NavigateToFile(blog)">@blog</a>
+                <a @onclick="() => NavigateToFile(blog)">@blog.Humanize(LetterCasing.Title)</a>
             </td>
         </tr>
     }

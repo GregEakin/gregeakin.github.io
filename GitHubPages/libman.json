@@ -11,7 +11,7 @@
       "destination": "wwwroot/lib/mathjax/"
     },
     {
-      "library": "mermaid@11.4.0",
+      "library": "mermaid@11.5.0",
       "destination": "wwwroot/lib/mermaid/"
     }
   ]
