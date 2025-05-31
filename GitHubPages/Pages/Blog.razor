@@ -9,25 +9,34 @@
     <thead>
     <tr>
         <th>File Name</th>
+        <th>Publish Date</th>
     </tr>
     </thead>
     <tbody>
-    @foreach (var blog in _blogs)
+    @foreach (var blog in _blogs.OrderByDescending(b => FormatDate(b.Item2)))
     {
         <tr>
             <td>
-                <a @onclick="() => NavigateToFile(blog)">@blog.Humanize(LetterCasing.Title)</a>
+                <a @onclick="() => NavigateToFile(blog.Item1)">@blog.Item1.Humanize(LetterCasing.Title)</a>
             </td>
+            <td>@FormatDate(@blog.Item2).Humanize()</td>
         </tr>
     }
     </tbody>
 </table>
 
 @code {
-    private readonly string[] _blogs = ["dinosaur", "block", "fun-programming", "genetic-ai", "NuralNet", "test", "diag"];
+    private readonly (string, string)[] _blogs = [
+        ( "dinosaur", "2025-05-31 08:42:59 -0700" ),
+        ( "block", "2024-12-12 08:18:59 -0700" ),
+        ( "fun-programming", "2018-12-09 11:42:59 -0700" ),
+        ( "genetic-ai", "2024-12-09 11:42:59 -0700" ),
+        ( "NuralNet", "2024-12-08 09:36:00 -0700" ),
+        ( "test", "2024-12-08 09:19:45 -0700" ),
+        ( "diag", "2018-12-09 11:42:59 -0700" ),
+    ];
 
-    private void NavigateToFile(string fileName)
-    {
-        Navigation.NavigateTo($"/page/{fileName}");
-    }
+    private void NavigateToFile(string fileName) => Navigation.NavigateTo($"/page/{fileName}");
+
+    private static DateTime FormatDate(string value) => DateTime.TryParse(value, out var date) ? date : DateTime.Now;
 }
