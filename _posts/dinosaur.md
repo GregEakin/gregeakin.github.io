@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  "REX, My Long Lost Fried."
+title:  "REX, My Long-Lost Friend."
 date:   2025-05-31 08:42:59 -0700
 categories: pictures
 ---
