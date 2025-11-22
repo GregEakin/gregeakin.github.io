@@ -62,6 +62,7 @@ declare class Theme {
     critBorderColor: any;
     critBkgColor: any;
     todayLineColor: any;
+    vertLineColor: any;
     taskTextColor: any;
     taskTextOutsideColor: any;
     taskTextLightColor: any;
@@ -129,6 +130,7 @@ declare class Theme {
     pieOuterStrokeWidth: any;
     pieOuterStrokeColor: any;
     pieOpacity: any;
+    radar: any;
     archEdgeColor: any;
     archEdgeArrowColor: any;
     archEdgeWidth: any;

@@ -65,6 +65,7 @@ declare class Theme {
     critBkgColor: string;
     taskTextDarkColor: string;
     todayLineColor: string;
+    vertLineColor: string;
     personBorder: any;
     personBkg: string;
     archEdgeColor: string;
@@ -146,6 +147,7 @@ declare class Theme {
         blockStrokeColor: any;
         blockFillColor: string;
     } | undefined;
+    radar: any;
     classText: any;
     requirementBackground: any;
     requirementBorderColor: any;
